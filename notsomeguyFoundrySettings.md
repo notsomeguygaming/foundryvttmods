@@ -1,17 +1,17 @@
-## `generating config from blank base`
-- update user permissions
-- manage modules
-- configure module settings
-- token mold
-- export
+## `navigation`
+- [jump to nav](#navigation)
+- [jump to all mod settings](#configure-game-settings)
+- [jump to user](#user-only)
+- [jump to user low](#user-low-graphics-only)
+- [jump to permissions](#permissions)
+- [jump to generate from blank](#generating-config-from-blank-base)
+- [jump to import for new/existing world](#importing-steps-for-new-or-existing-worlds)
+- [jump to after import config settings](#configure-after-import-game-settings)
+- [jump to notes](#other-notes)
+- [jump to hotkeys](#quick-mod-hotkey-controls)
 
-## `setup in new world with preset config`
-- activate mod forien-copy-environment
-- `right click` game version on top right
-- click `export` to save current world settings
-- click `import` and select the premade json from forien-copy-environment 
-- reload the game a couple times for user settings to fully apply
-### `configure game settings (default/recommended)`
+## `configure game settings`
+- [jump to nav](#navigation)
 - `W` world setting(gm)
 - `WO` world optional setting
 - `U` user setting
@@ -194,7 +194,14 @@
 - windows controls
     - U organized minimize    `top / bottom taskbar`
 
-## `user only (default/recommended)`
+## `user only`
+- [jump to nav](#navigation)
+- `U` user setting
+- `UO` user optional
+- `UG` user graphics setting for performance
+- `default / recommended` (UG low end may want off)
+    - `+` check
+    - `-` uncheck
 - <span style="background:ivory">![_____](tags/ivory.png)</span>action pack
     - U tray display mode   `automatic / toggle`
         - only really affects GM as players will always be `toggle` regardless of setting
@@ -244,7 +251,14 @@
     - U direction   `up / down`
 - <span style="background:ivory">![_____](tags/ivory.png)</span>windows controls
     - U organized minimize    `top / bottom taskbar`
-## `user low graphics only (default/recommended)`
+## `user low graphics only`
+- [jump to nav](#navigation)
+- `U` user setting
+- `UO` user optional
+- `UG` user graphics setting for performance
+- `default / recommended` (UG low end may want off)
+    - `+` check
+    - `-` uncheck
 - core
     - UG token vision animation +/-
     - UG light source animation +/-
@@ -275,6 +289,7 @@ Firefox -
 2. Fully close and re-launch Firefox.
 ```
 ## `Permissions`
+- [jump to nav](#navigation)
 ### `actor` - limited for only showing the token icon (secret game), observer for checking items and abilities
 | permission | select | sheet view | edit | share | in list |
 |:----------:|:------:|:----------:|:----:|:-----:|:-------:|
@@ -303,13 +318,25 @@ Firefox -
 | observer    |    X   |       `O`   |       `O`   |   X  |   X   |    `O`  |      X     |
 | owner       |    `O` |       `O`   |       `O`   |   `O`|   `O` |    `O`  |      `O`   |
 
-# `importing steps`
-- use `forien-copy-environment` or `midiqol` import to restore config
-    - activate `forien-copy-environment` mod
-    - `right click` on game version on right side above mod configs and click import
+## `generating config from blank base`
+- [jump to nav](#navigation)
+- update user permissions
+- manage modules
+- configure module settings
+    - dnd5e-animations may ask if you want to update all animations on first run, click update
+- token mold
+- export
+## `importing steps for new or existing worlds`
+- [jump to nav](#navigation)
+- activate `forien-copy-environment` mod
+    - `right click` on game version on right side above mod configs and click
+    - click `export` to save current world settings
+    - click `import` and select the premade json from forien-copy-environment 
     - skip `compendium-folders`
-- dnd5e-animations may ask if you want to update all animations, click update
-### `configure after import game settings`
+    - scroll to bottom of popup and click `import button`
+    - reload the game a couple times for user settings to fully apply
+## `configure after import game settings`
+- [jump to nav](#navigation)
 - drag upload
     - W change path to `dragupload/uploaded/myname/myworld`
 - dfreds convenient effects 
@@ -324,13 +351,14 @@ Firefox -
 - sharedvision
     - change `limited` vision type to `fog` `token` or `vision`
 - token mold
-    - set categories to randomize (name only)
+    - set categories to randomize (`name only`)
 - z-scatter
     - size snap button `on` in left panel
 - configure any keybinds
 - configure individual user settings
 - `mountup` set token you want to be the mount, `on` in prototype token
-### `Other Notes`
+## `Other Notes`
+- [jump to nav](#navigation)
 - vision modes in token configuration ->vision
     - Basic Vision
         - no effect on filter regardless of light
@@ -359,7 +387,8 @@ Firefox -
 - `double right click` targets a hostile token
 - drag a token onto another character sheet to perform a `polymorph`, use `restore transformation` at top of character sheet to revert
 - on `actors` button, create a token type `group` and add tokens to see `total hp` of tokens, set `permissions` so all can see. inventory is `copy` based
-### `quick mod hotkey controls`
+## `quick mod hotkey controls`
+- [jump to nav](#navigation)
 - aedifs-tactical-grid
     - use `drag` or `hotkey` to see distance of other tokens
 - arbron-summoner
