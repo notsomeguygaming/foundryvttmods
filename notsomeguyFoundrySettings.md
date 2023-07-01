@@ -1,10 +1,16 @@
-# `generating config from blank base`
+## `generating config from blank base`
 - update user permissions
 - manage modules
 - configure module settings
 - token mold
 - export
 
+## `setup in new world with preset config`
+- activate mod forien-copy-environment
+- `right click` game version on top right
+- click `export` to save current world settings
+- click `import` and select the premade json from forien-copy-environment 
+- reload the game a couple times for user settings to fully apply
 ### `configure game settings (default/recommended)`
 - `W` world setting(gm)
 - `WO` world optional setting
@@ -189,7 +195,7 @@
     - U organized minimize    `top / bottom taskbar`
 
 ## `user only (default/recommended)`
-- <span style="background:ivory">_____</span>action pack
+- <span style="background:ivory">![_____](tags/ivory.png)</span>action pack
     - U tray display mode   `automatic / toggle`
         - only really affects GM as players will always be `toggle` regardless of setting
 - core
@@ -202,18 +208,18 @@
     - UO show disabled effects   +/+
     - UO show passive effects   -/+
     - UO passive effects right click behavior (maybe if you have an effect with a measured template that you need to delete instead of disable at the end of the turn)  `disable / disable`
-- <span style="background:ivory">_____</span>dice so nice
+- <span style="background:ivory">![_____](tags/ivory.png)</span>dice so nice
     - UO 3d dice settings   customize dice
 - dnd5e drag ruler integration
     - UO hide switch speed button  (OFF if you have an alternate speed like flying) -/+ 
     - U hide toggle terrain button  (don't really need to toggle it)   -/+
-- <span style="background:ivory">_____</span>drag ruler
+- <span style="background:ivory">![_____](tags/ivory.png)</span>drag ruler
     - U pathfinding by default (for players otherwise need to use hotkey, dm off otherwise can't move tokens over walls and dm can't use hotkey) -/+
-- <span style="background:ivory">_____</span>drag upload
+- <span style="background:ivory">![_____](tags/ivory.png)</span>drag upload
     - W change path to `dragupload/uploaded/myname/myworld`
 - monks combat details
     - UO volume (your turn notification)    `60/60`
-- <span style="background:ivory">_____</span>monks hotbar expansion
+- <span style="background:ivory">![_____](tags/ivory.png)</span>monks hotbar expansion
     - U number of rows  `5/3`
     - U reverse     -/+
     - U hide the first row    -/+
@@ -231,12 +237,12 @@
 - simple calendar
     - U open on load    +/-
         - should basically auto close after first run if smalltime is on anyway
-- <span style="background:ivory">_____</span>tactical grid
+- <span style="background:ivory">![_____](tags/ivory.png)</span>tactical grid
     - U display distances on ruler drag  (if you don't want to use the keybind)   -/+
     - UO in keybinds add button for `display distances`
-- <span style="background:ivory">_____</span>token action hud
+- <span style="background:ivory">![_____](tags/ivory.png)</span>token action hud
     - U direction   `up / down`
-- <span style="background:ivory">_____</span>windows controls
+- <span style="background:ivory">![_____](tags/ivory.png)</span>windows controls
     - U organized minimize    `top / bottom taskbar`
 ## `user low graphics only (default/recommended)`
 - core
