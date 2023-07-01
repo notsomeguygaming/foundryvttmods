@@ -1,11 +1,11 @@
 # <span style="background:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);color:white;text-shadow: 2px 2px black;border-radius:15px">notsomeguy's fantastical list of foundry mods</span>
 
-Legend v1.0.27
+Legend v1.0.28
 - Foundry Build V10 291
 - DND 5e System 2.1.5
 - descriptions and similar mods grouped under bulletpoints
 - DD
-    - only exists as a dependency
+    - only exists as a dependency, highly unlikely you will use this directly
 - D `modname`
     - `modname` is required to run
 - O `modname`
@@ -16,12 +16,13 @@ Legend v1.0.27
     - likely not useful but interesting, X to disable auto linking
 - <span style="background:navy">![_____](tags/navy.png)</span>           Best
 - <span style="background:indigo">![_____](tags/indigo.png)</span>       testing
-- <span style="background:ivory">![_____](tags/ivory.png)</span>         ok
+- <span style="background:ivory">![_____](tags/ivory.png)</span>         ok / optional
 - <span style="background:lime">![_____](tags/lime.png)</span>           installed for testing
 - <span style="background:gold">![_____](tags/gold.png)</span>           unchecked
 - <span style="background:salmon">![_____](tags/salmon.png)</span>       unlikely
 - <span style="background:grey">![_____](tags/grey.png)</span>           unlikely dependency
 - <span style="background:teal">![_____](tags/teal.png)</span>           req new version / install manually
+- <span style="background:violet">![_____](tags/violet.png)</span>       paid
 - <span style="background:olive">![_____](tags/olive.png)</span>         deprecated / old version
 - <span style="background:brown">![_____](tags/brown.png)</span>         bad / should be uninstalled and replaced
 
@@ -80,7 +81,7 @@ Legend v1.0.27
         - calculate difficult terrain polygon 
         - `set` terrain cost `2` to represent difficult terrain
         - `I think it's currently bugged as it works for the GM but not other players unless they reload, sometimes the GM needs to reload too`
-        - `last checked Fv10.291 dnd2.1.5
+        - `last checked Fv10.291 dnd2.1.5`
         - O <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/terrain-ruler
             -v10
             - DD
@@ -196,6 +197,11 @@ Legend v1.0.27
         - if `player` given options, will only work for their `OWNED` tokens
         - `set` uncheck `GM only`
         - O `set` checked `show all passive` shows ac, walk speed, passive perception,investigation,insight,stealth 
+    - <span style="background:gold">![_____](tags/gold.png)</span> https://foundryvtt.com/packages/illandril-token-tooltips
+        -v10
+        - tooltips for DnD5e include HP, AC, Movement Speeds, Passive Perception, Passive Investigation, Passive Insight, Resources, Spell Slots, Feat Usages, and Item Uses and Quantity. All values can be hidden if you do not want them to show.
+        - Tooltips are shown for all tokens for GMs, and visibility is configurable for players.
+        - similar functionality to `token-info-icons` but with possibly more options
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/lmrtfy
         -v10
         - lets Game Masters request rolls from their players
@@ -511,7 +517,7 @@ Legend v1.0.27
         ```
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/combat-utility-belt
         -v10 last version
-        - has the condition lab which is interesting but possibly replaced by dfreds-convenient-effects
+        - has the condition lab which is interesting but possibly replaced by `dfreds-convenient-effects` or `condition-lab-triggler`
         - D Enhanced Conditions
         - D Triggler
     - <span style="background:brown">![_____](tags/brown.png)</span>https://foundryvtt.com/packages/betterrolls5e 
@@ -546,6 +552,16 @@ Legend v1.0.27
     -v10
     - custom looking dice
     - players may need to reload to change dice
+    - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/entice-with-dice-so-nice
+        -v10
+        - DD
+        - D dice-so-nice
+        - addon to Dice so Nice, adding more textures
+    - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/nice-more-dice
+        -v10
+        - DD
+        - D dice-so-nice
+        - another addon for dice so nice
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/dice-calculator
     -v10-11
     - dice tray below chat
@@ -667,8 +683,8 @@ Legend v1.0.27
     - persistent Window Taskbar and Window Buttons: Minimize, Maximize and Pin floating Windows
     - `unset` remember pinned windows
     - `unset` checked `minimize everything on outside click`
-    - `set` organized minimize to `bottom taskbar` or `bottom`, PERSONAL
-    - `set` checked `core`->`left click to release objects` PERSONAL
+    - `set` organized minimize to `bottom taskbar` or `bottom`, USER
+    - `set` checked `core`->`left click to release objects` USER
 ---
 
 ### `loot`
@@ -816,6 +832,7 @@ Legend v1.0.27
     - `df-curvy-walls` uses
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/df-qol
     -v10
+    - DragonFlagon Quality of Life / DF Quality of Life
     - token locking
     - quick table rolling
     - day/night transition duration
@@ -826,7 +843,7 @@ Legend v1.0.27
     - D Times Up
     - shows active effects in top right corner
     - O itemacro
-    - `set` off `show disabled effects` PERSONAL
+    - `set` off `show disabled effects` USER
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/visual-active-effects
         -v10-11
         -  all temporary effects (including status conditions) affecting your current token will be displayed in the top right 
@@ -1044,6 +1061,25 @@ Legend v1.0.27
         - D Warpgate
 
 ### `content`
+- <span style="background:indigo">![_____](tags/indigo.png)</span><span style="background:violet">![_____](tags/violet.png)</span> https://foundryvtt.com/packages/baileywiki-nuts-and-bolts
+    -v10
+    - DD
+    - This contains journal entries and macros, and generally supports all Baileywiki modules. It will be installed automatically whenever you install any Baileywiki module
+    - https://docs.google.com/document/d/1wC_ih_aeK_5vFD2IVd0Y6dOAInvuY-0jfUMggnzZ9kE/edit
+    - <span style="background:indigo">![_____](tags/indigo.png)</span><span style="background:violet">![_____](tags/violet.png)</span> https://foundryvtt.com/packages/baileywiki-community-map-browser
+        -v10
+        - Community Map Browser that allows Baileywiki Patrons to share maps that they have created using the Baileywiki Modules with other users. You can browse the community collection, liking and downloading the maps that you enjoy; or upload your own contribution
+    - <span style="background:indigo">![_____](tags/indigo.png)</span><span style="background:violet">![_____](tags/violet.png)</span> https://foundryvtt.com/packages/baileywiki-maps
+        -v10
+        - maps with walls, lights, special effects and interactions, module support, and modular pieces
+        - D `Monk's Active Tiles`
+    - <span style="background:indigo">![_____](tags/indigo.png)</span><span style="background:violet">![_____](tags/violet.png)</span> https://foundryvtt.com/packages/baileywiki-maps-premium
+        -v10
+        - lots of premium, ready-made maps and also a whole fleet of naval ship prefabs. 
+        - To get this pack, subscribe to the Foundry Basic Tier (or higher)
+    - <span style="background:indigo">![_____](tags/indigo.png)</span><span style="background:violet">![_____](tags/violet.png)</span> https://foundryvtt.com/packages/baileywiki-landing-pages
+        -v10
+        - modular, interactive landing page systems for you to create engaging, customized landing pages for your adventures. Complete with hundreds of props and flexible, dynamic themes
 
 
 ### `other`
@@ -1290,6 +1326,7 @@ Legend v1.0.27
     - `wasn't really sure how to get it to work, and the menus were a little buggy`
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/tagger
         -v10-11
+        - DD
         - `right click` token settings add tags
         - All major PlaceableObjects' configuration dialogues (such as actor prototype tokens, tokens, tiles, walls, lights, etc), now has a "Tags" field.
         - Each tag is separated by a comma.
@@ -1323,6 +1360,10 @@ Legend v1.0.27
     - DD
     - Adds color picker as settings option and form option
     - use with `hitpoint-tint` and `bossbar`
+- <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/disable-mouse-wheel-sliders
+    -v10-11
+    - disables mouse wheel controls for sliders & numerical input fields
+    - `enable` the settings in the Module Settings in order for them to take effect USER
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/token-ease
     -v10
     - introduce easing, custom movement speed, and movement duration to tokens
@@ -1445,17 +1486,6 @@ Legend v1.0.27
     - D dae
     - D dfreds-convenient-effects
     - D ActiveAuras
-
-- <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/entice-with-dice-so-nice
-    -v10
-    - DD
-    - D dice-so-nice
-    - addon to Dice so Nice, adding more textures
-    - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/nice-more-dice
-        -v10
-        - DD
-        - D dice-so-nice
-        - another addon for dice so nice
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/game-icons-net
     -v10-11
     - `No need to activate this module`
