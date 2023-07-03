@@ -1,14 +1,50 @@
+# <span style="background:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);color:white;text-shadow: 2px 2px black;border-radius:15px">notsomeguy's fantastical list of FoundryVTT Mod Settings</span>
+
+Legend v1.0.1
+- Foundry Build V10 291
+- DND 5e System 2.1.5
 ## `navigation`
 - [jump to nav](#navigation)
-- [jump to all mod settings](#configure-game-settings)
-- [jump to user](#user-only)
-- [jump to user low](#user-low-graphics-only)
 - [jump to permissions](#permissions)
+- [jump to all mod settings](#configure-game-settings)
+- [jump to user low](#user-low-graphics-only)
 - [jump to generate from blank](#generating-config-from-blank-base)
 - [jump to import for new/existing world](#importing-steps-for-new-or-existing-worlds)
+### `After import`
 - [jump to after import config settings](#configure-after-import-game-settings)
+- [jump to user](#user-only)
 - [jump to notes](#other-notes)
 - [jump to hotkeys](#quick-mod-hotkey-controls)
+
+## `Permissions`
+- [jump to nav](#navigation)
+### `actor` - limited for only showing the token icon (secret game), observer for checking items and abilities
+| permission | select | sheet view | edit | share | in list |
+|:----------:|:------:|:----------:|:----:|:-----:|:-------:|
+| none       |    X   |     X      |   X  |   X   |    X    |
+| `limited`  |    X   |   `icon`   |   X  |   X   |  `O`    |
+| `observer` |    X   |   `stats`  |   X  |   X   |  `O`    |
+| owner      |  `O`   |   `stats`  | `O`  | `O`   |  `O`    |
+### `item` - none so it's not in the list
+| permission | select | open view | view stats | edit | share | in list | secretText |
+|:----------:|:------:|:---------:|:----------:|:----:|:-----:|:-------:|:----------:|
+| `none`     |    X   |     X     |     X      |   X  |   X   |    X    |      X     |
+| limited    |    X   |     `O`   |     X      |   X  |   X   |    `O`  |      X     |
+| observer   |    X   |     `O`   |     `O`    |   X  |   X   |    `O`  |      X     |
+| owner      |    `O` |     `O`   |     `O`    |   `O`|   `O` |    `O`  |      `O`   |
+- secret text does not show up in chat unless `revealed`
+- items in inventory are set to `owner`, will not see in list unless explicitly changed
+### `journal` - limited so it's not in the list
+- if `show players` is clicked on the journal, document will be shown with journal level permission
+    - if the journal is `none` and all pages are `none`, every page will be shown
+- if `show players` is clicked for the `page`, page will be shown regardless of permission
+
+|J permission | select | read pg lim | read pg obs | edit | share | in list | secretText |
+|:-----------:|:------:|:-----------:|:-----------:|:----:|:-----:|:-------:|:----------:|
+| none        |    X   |       X     |       `O`   |   X  |   X   |    X    |      X     |
+| `limited`   |    X   |       X     |       `O`   |   X  |   X   |    X    |      X     |
+| observer    |    X   |       `O`   |       `O`   |   X  |   X   |    `O`  |      X     |
+| owner       |    `O` |       `O`   |       `O`   |   `O`|   `O` |    `O`  |      `O`   |
 
 ## `configure game settings`
 - [jump to nav](#navigation)
@@ -193,7 +229,82 @@
     - W actors -> settings -> name -> choose adjectives from the following rollable table   `english set of 700` / `english over 4700 random`
 - windows controls
     - U organized minimize    `top / bottom taskbar`
+## `user low graphics only`
+- [jump to nav](#navigation)
+- `U` user setting
+- `UO` user optional
+- `UG` user graphics setting for performance
+- `default / recommended` (UG low end may want off)
+    - `+` check
+    - `-` uncheck
+- core
+    - UG token vision animation +/-
+    - UG light source animation +/-
+- automated automations
+    - UG automated automations  `on/off`
+- dice so nice
+    - UG 3d dice settings
+        - UG preferences -> enable immersive darkness mode     +/-
+        - UG performance -> image quality      `high / medium`
+- sequencer
+    - UG enable effects     +/-
+- tactical grid
+    - UG disable tactical grid      -/+
+- token magic fx
+    - UG disable fx animations  -/+
+```
+Enable Hardware Acceleration
+If you've been experiencing performance issues, grey backgrounds, or scenes are not rendering, follow these steps in the affected player's browser:
+Browser Hardware Acceleration Settings
 
+Chrome, Chromium, Edge -
+1. Open chrome://settings, enable Use Hardware Acceleration When Available
+2. Open chrome://flags, enable Override Software Rendering List
+3. Fully close and re-launch Chrome.
+
+Firefox -
+1. Open about:config , set layers.acceleration.force-enabled to true
+2. Fully close and re-launch Firefox.
+```
+## `generating config from blank base`
+- [jump to nav](#navigation)
+- update user permissions
+- manage modules
+- configure module settings
+    - dnd5e-animations may ask if you want to update all animations on first run, click update
+- token mold
+- export
+## `importing steps for new or existing worlds`
+- [jump to nav](#navigation)
+- activate `forien-copy-environment` mod
+    - `right click` on game version on right side above mod configs and click
+    - click `export` to save current world settings
+    - click `import` and select the premade json from forien-copy-environment 
+    - skip `compendium-folders`
+    - scroll to bottom of popup and click `import button`
+    - reload the game a couple times for user settings to fully apply
+## `configure after import game settings`
+- [jump to nav](#navigation)
+- drag upload
+    - W change path to `dragupload/uploaded/myname/myworld`
+- dfreds convenient effects 
+    - W `import` custom effects from `sidebar icon` if haven't already. contains `[dodge, faerie fire, light, torch]`
+- item pile
+    - drop any item onto canvas to create `default item pile` 
+        - `set Default Item Pile` interaction distance to be more than 1
+        - `item pile` is a list of items and their amount
+        - `container` is item pile but lets you change image for the pile if it's open or closed or locked
+        - `merchant` lets a player buy and sell from the token
+        - `vault` is a mini grid for items to sit in
+- sharedvision
+    - change `limited` vision type to `fog` `token` or `vision`
+- token mold
+    - set categories to randomize (`name only`)
+- z-scatter
+    - size snap button `on` in left panel
+- configure any keybinds
+- configure individual user settings
+- `mountup` set token you want to be the mount, `on` in prototype token
 ## `user only`
 - [jump to nav](#navigation)
 - `U` user setting
@@ -251,112 +362,6 @@
     - U direction   `up / down`
 - <span style="background:ivory">![_____](tags/ivory.png)</span>windows controls
     - U organized minimize    `top / bottom taskbar`
-## `user low graphics only`
-- [jump to nav](#navigation)
-- `U` user setting
-- `UO` user optional
-- `UG` user graphics setting for performance
-- `default / recommended` (UG low end may want off)
-    - `+` check
-    - `-` uncheck
-- core
-    - UG token vision animation +/-
-    - UG light source animation +/-
-- automated automations
-    - UG automated automations  `on/off`
-- dice so nice
-    - UG 3d dice settings
-        - UG preferences -> enable immersive darkness mode     +/-
-        - UG performance -> image quality      `high / medium`
-- sequencer
-    - UG enable effects     +/-
-- tactical grid
-    - UG disable tactical grid      -/+
-- token magic fx
-    - UG disable fx animations  -/+
-```
-Enable Hardware Acceleration
-If you've been experiencing performance issues, grey backgrounds, or scenes are not rendering, follow these steps in the affected player's browser:
-Browser Hardware Acceleration Settings
-
-Chrome, Chromium, Edge -
-1. Open chrome://settings, enable Use Hardware Acceleration When Available
-2. Open chrome://flags, enable Override Software Rendering List
-3. Fully close and re-launch Chrome.
-
-Firefox -
-1. Open about:config , set layers.acceleration.force-enabled to true
-2. Fully close and re-launch Firefox.
-```
-## `Permissions`
-- [jump to nav](#navigation)
-### `actor` - limited for only showing the token icon (secret game), observer for checking items and abilities
-| permission | select | sheet view | edit | share | in list |
-|:----------:|:------:|:----------:|:----:|:-----:|:-------:|
-| none       |    X   |     X      |   X  |   X   |    X    |
-| `limited`  |    X   |   `icon`   |   X  |   X   |  `O`    |
-| `observer` |    X   |   `stats`  |   X  |   X   |  `O`    |
-| owner      |  `O`   |   `stats`  | `O`  | `O`   |  `O`    |
-### `item` - none so it's not in the list
-| permission | select | open view | view stats | edit | share | in list | secretText |
-|:----------:|:------:|:---------:|:----------:|:----:|:-----:|:-------:|:----------:|
-| `none`     |    X   |     X     |     X      |   X  |   X   |    X    |      X     |
-| limited    |    X   |     `O`   |     X      |   X  |   X   |    `O`  |      X     |
-| observer   |    X   |     `O`   |     `O`    |   X  |   X   |    `O`  |      X     |
-| owner      |    `O` |     `O`   |     `O`    |   `O`|   `O` |    `O`  |      `O`   |
-- secret text does not show up in chat unless `revealed`
-- items in inventory are set to `owner`, will not see in list unless explicitly changed
-### `journal` - limited so it's not in the list
-- if `show players` is clicked on the journal, document will be shown with journal level permission
-    - if the journal is `none` and all pages are `none`, every page will be shown
-- if `show players` is clicked for the `page`, page will be shown regardless of permission
-
-|J permission | select | read pg lim | read pg obs | edit | share | in list | secretText |
-|:-----------:|:------:|:-----------:|:-----------:|:----:|:-----:|:-------:|:----------:|
-| none        |    X   |       X     |       `O`   |   X  |   X   |    X    |      X     |
-| `limited`   |    X   |       X     |       `O`   |   X  |   X   |    X    |      X     |
-| observer    |    X   |       `O`   |       `O`   |   X  |   X   |    `O`  |      X     |
-| owner       |    `O` |       `O`   |       `O`   |   `O`|   `O` |    `O`  |      `O`   |
-
-## `generating config from blank base`
-- [jump to nav](#navigation)
-- update user permissions
-- manage modules
-- configure module settings
-    - dnd5e-animations may ask if you want to update all animations on first run, click update
-- token mold
-- export
-## `importing steps for new or existing worlds`
-- [jump to nav](#navigation)
-- activate `forien-copy-environment` mod
-    - `right click` on game version on right side above mod configs and click
-    - click `export` to save current world settings
-    - click `import` and select the premade json from forien-copy-environment 
-    - skip `compendium-folders`
-    - scroll to bottom of popup and click `import button`
-    - reload the game a couple times for user settings to fully apply
-## `configure after import game settings`
-- [jump to nav](#navigation)
-- drag upload
-    - W change path to `dragupload/uploaded/myname/myworld`
-- dfreds convenient effects 
-    - W `import` custom effects from `sidebar icon` if haven't already. contains `[dodge, faerie fire, light, torch]`
-- item pile
-    - drop any item onto canvas to create `default item pile` 
-        - `set Default Item Pile` interaction distance to be more than 1
-        - `item pile` is a list of items and their amount
-        - `container` is item pile but lets you change image for the pile if it's open or closed or locked
-        - `merchant` lets a player buy and sell from the token
-        - `vault` is a mini grid for items to sit in
-- sharedvision
-    - change `limited` vision type to `fog` `token` or `vision`
-- token mold
-    - set categories to randomize (`name only`)
-- z-scatter
-    - size snap button `on` in left panel
-- configure any keybinds
-- configure individual user settings
-- `mountup` set token you want to be the mount, `on` in prototype token
 ## `Other Notes`
 - [jump to nav](#navigation)
 - vision modes in token configuration ->vision
@@ -379,10 +384,11 @@ Firefox -
     - turning off token vision allow all tokens to see as far as they possibly can not limited by walls
 - PCs cannot see the vision of tokens with `limited` permission, nor the stats. 
 - PCs can see the vision of tokens with `observer` permission, as well as the stats. 
+- set `lights` to `negative values` to make them `dark`
 - if you want tokens to have vision on the scene without global illumination, either `add lights to the map` or set the prototype token `vision`->`vision radius(in darkness)` -> `60`
 - `right click` status icons to make them fill the entire token instead of just the corner
 - create a token for lair actions and set to init 20 or drag/create a feature on the sheet with type `lair action`
-- lair actions don't seem to have been imported
+- lair actions don't seem to always get imported
 - configure settings->core->`pan token to speaker`
 - `double right click` targets a hostile token
 - drag a token onto another character sheet to perform a `polymorph`, use `restore transformation` at top of character sheet to revert
