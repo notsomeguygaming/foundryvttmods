@@ -1,6 +1,6 @@
 # <span style="background:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);color:white;text-shadow: 2px 2px black;border-radius:15px">notsomeguy's fantastical list of FoundryVTT Mod Settings</span>
 
-Legend v1.0.1
+Legend v1.0.2
 - Foundry Build V10 291
 - DND 5e System 2.1.5
 ## `navigation`
@@ -12,9 +12,10 @@ Legend v1.0.1
 - [jump to import for new/existing world](#importing-steps-for-new-or-existing-worlds)
 ### `After import`
 - [jump to after import config settings](#configure-after-import-game-settings)
-- [jump to user](#user-only)
+- [jump to user](#user-basic-only)
 - [jump to notes](#other-notes)
 - [jump to hotkeys](#quick-mod-hotkey-controls)
+- [jump to absolute bottom](#absolute-bottom)
 
 ## `Permissions`
 - [jump to nav](#navigation)
@@ -83,6 +84,8 @@ Legend v1.0.1
         - if animation stuck `Use the Tile Foreground Layer to remove the Animation`
         - if stuck can also check Sequencer.EffectManager.show()
     - UG automated automations  `on/off`
+- better roofs
+    - UG performance mode  -/+
 - combat carousel
     - U collapse navigation bar (good for gm) -/+
     - U open the combat carousel on combat creation -/+
@@ -242,6 +245,8 @@ Legend v1.0.1
     - UG light source animation +/-
 - automated automations
     - UG automated automations  `on/off`
+- better roofs
+    - UG performance mode  -/+
 - dice so nice
     - UG 3d dice settings
         - UG preferences -> enable immersive darkness mode     +/-
@@ -305,19 +310,18 @@ Firefox -
 - configure any keybinds
 - configure individual user settings
 - `mountup` set token you want to be the mount, `on` in prototype token
-## `user only`
+## `user basic only`
 - [jump to nav](#navigation)
 - `U` user setting
 - `UO` user optional
-- `UG` user graphics setting for performance
 - `default / recommended` (UG low end may want off)
     - `+` check
     - `-` uncheck
+- core
+    - UO left click to release objects  -/+
 - <span style="background:ivory">![_____](tags/ivory.png)</span>action pack
     - U tray display mode   `automatic / toggle`
         - only really affects GM as players will always be `toggle` regardless of setting
-- core
-    - UO left click to release objects  -/+
 - combat carousel
     - U open the combat carousel on combat creation -/+
     - U collapse navigation bar (good for gm) -/+
@@ -436,3 +440,6 @@ Firefox -
 - sweetnothings
     - whispers `alt + w`
     - reply `alt + r`
+
+## `absolute bottom`
+- [jump to nav](#navigation)
