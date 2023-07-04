@@ -20,7 +20,7 @@
 - [jump to additional tests](#additional-tests)
 - [jump to absolute bottom](#absolute-bottom)
 
-Legend v1.0.30
+Legend v1.0.31
 - Foundry Build V10 291
 - DND 5e System 2.1.5
 - descriptions and similar mods grouped under bulletpoints
@@ -1169,10 +1169,8 @@ Legend v1.0.30
     - O https://foundryvtt.com/packages/monks-tokenbar
     - O https://foundryvtt.com/packages/tokenmagic
     - O https://foundryvtt.com/packages/quick-encounters
-    - O https://foundryvtt.com/packages/custom-fonts
-        - only used for the Baileywiki Landing Pages module
     - O https://foundryvtt.com/packages/moulinette-core
-        - alternative way to browse your assets and keep the most up-to-date scenes and prefabs but mostly requires patreon
+        - alternative way to browse your assets and keep the most up-to-date scenes and prefabs but mostly requires `patreon`
     - <span style="background:indigo">![_____](tags/indigo.png)</span><span style="background:violet">![_____](tags/violet.png)</span> https://foundryvtt.com/packages/baileywiki-community-map-browser
         -v10
         - Community Map Browser that allows Baileywiki Patrons to share maps that they have created using the Baileywiki Modules with other users. You can browse the community collection, liking and downloading the maps that you enjoy; or upload your own contribution
@@ -1187,6 +1185,8 @@ Legend v1.0.30
         - To get this pack, subscribe to the Foundry Basic Tier (or higher)
     - <span style="background:indigo">![_____](tags/indigo.png)</span><span style="background:violet">![_____](tags/violet.png)</span> https://foundryvtt.com/packages/baileywiki-landing-pages
         -v10-11
+        - O https://foundryvtt.com/packages/custom-fonts
+            - only used for the Baileywiki Landing Pages module
         - modular, interactive landing page systems for you to create engaging, customized landing pages for your adventures. Complete with hundreds of props and flexible, dynamic themes
 - <span style="background:gold">![_____](tags/gold.png)</span><span style="background:violet">![_____](tags/violet.png)</span>https://foundryvtt.com/packages/moulinette-core
     -10-11
