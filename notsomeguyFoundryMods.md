@@ -20,7 +20,7 @@
 - [jump to additional tests](#additional-tests)
 - [jump to absolute bottom](#absolute-bottom)
 
-Legend v1.0.31
+Legend v1.0.32
 - Foundry Build V10 291
 - DND 5e System 2.1.5
 - descriptions and similar mods grouped under bulletpoints
@@ -41,8 +41,8 @@ Legend v1.0.31
 - <span style="background:grey">![_____](tags/grey.png)</span>           unlikely dependency
 - <span style="background:teal">![_____](tags/teal.png)</span>           req new version / install manually
 - <span style="background:violet">![_____](tags/violet.png)</span>       paid
-- <span style="background:olive">![_____](tags/olive.png)</span>         deprecated / old version
-- <span style="background:brown">![_____](tags/brown.png)</span>         bad / should be uninstalled and replaced
+- <span style="background:olive">![_____](tags/olive.png)</span>         deprecated / old version with no alternative
+- <span style="background:brown">![_____](tags/brown.png)</span>         should be uninstalled and replaced / issues
 
 ## `Good stuff to use (in blue)`
 ### `DM`
@@ -137,9 +137,9 @@ Legend v1.0.31
         - Adds trigger buttons to the Foundry interface for manual zone triggering or the toggling on and off of zones with automated triggers
         - Does not include any video, image or audio components
         - When another module can do something well, such as summoning a token (Warpgate), shaking the screen canvas (Kandashi's Fluid Canvas), or teleporting tokens (Monk's Active Tiles) then Danger Zone will integrate with that module to provide those effects. When a module is installed that Danger Zone integrates with, the new features will automatically be made available to you within Danger Zone
-    - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/trigger-happy
-        -v10
-        - deprecated so use monks-active-tiles
+    - <span style="background:brown">![_____](tags/brown.png)</span>https://foundryvtt.com/packages/trigger-happy
+        -v10 last version
+        - deprecated so use `monks-active-tiles`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/initiative-double-click
     -v10-11
     - double clicking the initiative value in the combat tracker to quickly modify it
@@ -1022,11 +1022,11 @@ Legend v1.0.31
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/monks-bloodsplats
         -v10-11
         - Display dead creatures as bloodsplats to keep the battlefield clear of tokens
-    - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/splatter
+    - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/splatter
         -v10-11
         - The bigger the hit, the more the blood, `blood will be placed on the scene`
         - When updating to V10+ you will probably need to update your datapaths, this basically means removing any data from the path, for example for dnd5e it would be attributes.hp.value as you can see the data. is no longer in the path.
-        - use `tokenmagic-automatic-wounds`
+        - use `tokenmagic-automatic-wounds`, add this if your system can handle additional graphical resources and you don't mind a ton of blood
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/hitpoint-tint
         -v10
         - tinting tokens based on their current HP
@@ -1149,7 +1149,7 @@ Legend v1.0.31
 
 ### `content`
 - [jump to nav](#navigation)
-- <span style="background:indigo">![_____](tags/indigo.png)</span><span style="background:violet">![_____](tags/violet.png)</span> https://foundryvtt.com/packages/baileywiki-nuts-and-bolts
+- <span style="background:indigo">![_____](tags/indigo.png)</span>https://foundryvtt.com/packages/baileywiki-nuts-and-bolts
     -v10-11
     - DD
     - This contains journal entries and macros, and generally supports all Baileywiki modules. It will be installed automatically whenever you install any Baileywiki module
@@ -1174,7 +1174,8 @@ Legend v1.0.31
     - <span style="background:indigo">![_____](tags/indigo.png)</span><span style="background:violet">![_____](tags/violet.png)</span> https://foundryvtt.com/packages/baileywiki-community-map-browser
         -v10
         - Community Map Browser that allows Baileywiki Patrons to share maps that they have created using the Baileywiki Modules with other users. You can browse the community collection, liking and downloading the maps that you enjoy; or upload your own contribution
-    - <span style="background:indigo">![_____](tags/indigo.png)</span><span style="background:violet">![_____](tags/violet.png)</span> https://foundryvtt.com/packages/baileywiki-maps
+        - `To get this pack, subscribe to the Foundry Basic Tier (or higher).`
+    - <span style="background:indigo">![_____](tags/indigo.png)</span>https://foundryvtt.com/packages/baileywiki-maps
         -v10
         - maps with walls, lights, special effects and interactions, module support, and modular pieces
         - D `baileywiki-nuts-and-bolts`
@@ -1182,35 +1183,13 @@ Legend v1.0.31
         -v10-11
         - lots of premium, ready-made maps and also a whole fleet of naval ship prefabs. 
         - premium modules entirely replace the Baileywiki free module. You can safely disable and uninstall that module assuming you don’t have any active maps that are using it
-        - To get this pack, subscribe to the Foundry Basic Tier (or higher)
+        - `To get this pack, subscribe to the Foundry Basic Tier (or higher)`
     - <span style="background:indigo">![_____](tags/indigo.png)</span><span style="background:violet">![_____](tags/violet.png)</span> https://foundryvtt.com/packages/baileywiki-landing-pages
         -v10-11
         - O https://foundryvtt.com/packages/custom-fonts
             - only used for the Baileywiki Landing Pages module
         - modular, interactive landing page systems for you to create engaging, customized landing pages for your adventures. Complete with hundreds of props and flexible, dynamic themes
-- <span style="background:gold">![_____](tags/gold.png)</span><span style="background:violet">![_____](tags/violet.png)</span>https://foundryvtt.com/packages/moulinette-core
-    -10-11
-    - `the core only provides the Moulinette's foundations. You'll have to install additional modules to bring features`
-    - <span style="background:gold">![_____](tags/gold.png)</span><span style="background:violet">![_____](tags/violet.png)</span>https://foundryvtt.com/packages/moulinette-scenes
-        -v10-11
-        - D `moulinette-core`
-        - adds capabilities for indexing scenes from other modules. If you support moulinette (Patreon), you also get access to scenes from Moulinette Cloud. See https://www.moulinette.cloud
-    - <span style="background:gold">![_____](tags/gold.png)</span><span style="background:violet">![_____](tags/violet.png)</span>https://foundryvtt.com/packages/moulinette-gameicons
-        -v10-11
-        - D `moulinette-core`
-        - adds capabilities for searching and downloading icons from game-icons.net. Search and download desired icons. Specify the background and foreground colors you'd like to use.
-    - <span style="background:gold">![_____](tags/gold.png)</span><span style="background:violet">![_____](tags/violet.png)</span>https://foundryvtt.com/packages/moulinette-imagesearch
-        -v10-11
-        - D `moulinette-core`
-        - adds capabilities for searching images and generating articles, tiles or tokens on the fly.
-    - <span style="background:gold">![_____](tags/gold.png)</span><span style="background:violet">![_____](tags/violet.png)</span>https://foundryvtt.com/packages/moulinette-tiles
-        -v10-11
-        - D `moulinette-core`
-        - adds capabilities for downloading tiles and adding them to your scenes. You can also bring your own images and manage them. Drag & drop images to your scenes to add tiles, actors' tokens or journal notes. If you support moulinette (Patreon) you also get access to Moulinette Cloud assets (see https://www.moulinette.cloud)
-    - <span style="background:gold">![_____](tags/gold.png)</span><span style="background:violet">![_____](tags/violet.png)</span>https://foundryvtt.com/packages/moulinette-sounds
-        -v10-11
-        - D `moulinette-core`
-        - adds capabilities for managing your sounds and create a soundpad. Bring your own sounds, manage them and assign them to a soundpad as you like. Includes Tabletop Audio SoundPad (requires Patreon support).
+        - `To get this pack, subscribe to the Foundry Advanced Tier (or higher).`
 
 ### `other`
 - [jump to nav](#navigation)
@@ -1636,6 +1615,31 @@ Legend v1.0.31
     modules/game-icons-net/blackbackgrounds/ 
     modules/game-icons-net/whitebackgrounds/ 
 ```
+- <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/moulinette-core
+    -v10-11
+    - `the core only provides the Moulinette's foundations. You'll have to install additional modules to bring features`
+    - content access list at bottom of page https://www.moulinette.cloud/getting-started/use-moulinette-to-access-creators-assets/
+    - essentially you get access to your local stuff and moulinette showcase packs but not free or paid stuff from a creator unless you patreon the creator or moulinette
+    - <span style="background:gold">![_____](tags/gold.png)</span><span style="background:violet">![_____](tags/violet.png)</span>https://foundryvtt.com/packages/moulinette-scenes
+        -v10-11
+        - D `moulinette-core`
+        - adds capabilities for indexing scenes from other modules. If you support moulinette (Patreon), you also get access to scenes from Moulinette Cloud. See https://www.moulinette.cloud
+    - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/moulinette-gameicons
+        -v10-11
+        - D `moulinette-core`
+        - adds capabilities for searching and downloading icons from game-icons.net. Search and download desired icons. Specify the background and foreground colors you'd like to use.
+    - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/moulinette-imagesearch
+        -v10-11
+        - D `moulinette-core`
+        - adds capabilities for searching images and generating articles, tiles or tokens on the fly.
+    - <span style="background:gold">![_____](tags/gold.png)</span><span style="background:violet">![_____](tags/violet.png)</span>https://foundryvtt.com/packages/moulinette-tiles
+        -v10-11
+        - D `moulinette-core`
+        - adds capabilities for downloading tiles and adding them to your scenes. You can also bring your own images and manage them. Drag & drop images to your scenes to add tiles, actors' tokens or journal notes. `support moulinette (Patreon) to get access to Moulinette Cloud assets` https://www.moulinette.cloud
+    - <span style="background:gold">![_____](tags/gold.png)</span><span style="background:violet">![_____](tags/violet.png)</span>https://foundryvtt.com/packages/moulinette-sounds
+        -v10-11
+        - D `moulinette-core`
+        - adds capabilities for managing your sounds and create a soundpad. Bring your own sounds, manage them and assign them to a soundpad as you like. Includes Tabletop Audio `SoundPad (requires Patreon support)`
 
 ### `test other`
 - [jump to nav](#navigation)
