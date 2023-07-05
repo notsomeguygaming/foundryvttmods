@@ -1,6 +1,6 @@
 # <span style="background:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);color:white;text-shadow: 2px 2px black;border-radius:15px">notsomeguy's fantastical list of FoundryVTT Mod Settings</span>
 
-Legend v1.0.2
+Legend v1.0.3
 - Foundry Build V10 291
 - DND 5e System 2.1.5
 ## `navigation`
@@ -277,12 +277,14 @@ Firefox -
 - manage modules
 - configure module settings
     - dnd5e-animations may ask if you want to update all animations on first run, click update
-- token mold
+- set token mold settings in actor tab
+- close any folders in compendiums or dfreds-convenient-effects
+- remove any custom effects in dfreds-convenient-effects as those don't transfer
 - export
 ## `importing steps for new or existing worlds`
 - [jump to nav](#navigation)
 - activate `forien-copy-environment` mod
-    - `right click` on game version on right side above mod configs and click
+    - `right click` on game version on right side above mod configs to open options box
     - click `export` to save current world settings
     - click `import` and select the premade json from forien-copy-environment 
     - skip `compendium-folders`
