@@ -20,7 +20,7 @@
 - [jump to additional tests](#additional-tests)
 - [jump to absolute bottom](#absolute-bottom)
 
-Legend v1.0.32
+Legend v1.0.33
 - Foundry Build V10 291
 - DND 5e System 2.1.5
 - descriptions and similar mods grouped under bulletpoints
@@ -51,12 +51,6 @@ Legend v1.0.32
     -v10-11
     - Various additional line, fill, and text style options
     - lets you convert a shape into a polygon, and `add more` edges by `dragging one of the sides`
-- <span style="background:indigo">![_____](tags/indigo.png)</span>https://foundryvtt.com/packages/betterroofs
-    -v10-11
-    - enhances Foundry's overhead tile vision functionality
-    - https://wiki.theripper93.com/free/betterroofs
-    - If you are using `Levels`, the Top of the tile needs to be set to `Infinity` for the tile to count as a roof
-    - used with `baileywiki`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/better-rolltables
     -v10
     - RollTables with Drag and Drop, Generate Loot, Encounters and and build your NPC Generator
@@ -168,7 +162,7 @@ Legend v1.0.32
     - Enhance visibility for the GM and players, with transparent FOW and visible tokens for the GM only
     - adds a button on the `left token menu` that allows the gm to have full vision regardless of which token is selected
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/fogmanager
-        -v10
+        -v10 last version
         - edit fog of war manually, and push/pull it to players
         - be sure to click the `merge from others` download button to get the players' current fog
         - be sure to click the `broadcast` upload button to push the fog to all other players
@@ -179,16 +173,48 @@ Legend v1.0.32
         -v10
         - seems like it's similar to fogmanager but I can't get it to work correctly
         - just use `fogmanager`
-- <span style="background:indigo">![_____](tags/indigo.png)</span>https://foundryvtt.com/packages/levels
+- <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/levels
   -v10-11
   - D `wall-height`
   - https://wiki.theripper93.com/levels
   - `basic tutorial` https://www.youtube.com/watch?v=ELlweNunn4g
+  - `updated tutorial` https://www.youtube.com/watch?v=xmGxEkmJblE
   - Create maps with multiple vertical levels
   - uses floor `elevations`    0-9    10-19   20-29   etc
   - floor `roof` uses `hide(br mode)`, `fade(occlusion)`
   - `highest roof` uses `any except 'none' but usually 'show'(br mode)`, `fade(occlusion)`
+  - with `global illumination` off, take the highest floor tile height(top) and set the roof to the same height (bottom)
+    - example 2 story with roof
+        - level 1 tile `0-9`
+        - level 2 tile `10-19`
+        - level 3 roof `19-infinite` with roof tile `is roof` on
+    - if that doesn't work for whatever reason, may need `global illumination` on if the roof tiles are still black and not showing
+        - if `betterroofs` is not enabled, that can also cause the black tiles
+  - make a layer from 0 to 99 and `click on it` if you can't see some items in your current scene, as sometimes tokens will be placed on different levels even if the levels popup isn't on
   - used with `baileywiki`
+  - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/betterroofs
+    -v10-11
+    - enhances Foundry's overhead tile vision functionality
+    - https://wiki.theripper93.com/free/betterroofs
+    - If you are using `Levels`, the Top of the tile needs to be set to `Infinity` for the tile to count as a roof, as well as `is a roof` checked
+    - adds `occlusionID` which is useful if you want to hide more than one roof when a token is on that floor
+    - used with `baileywiki` 
+   - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/wall-height
+    -v10-11
+        - allows setting vertical heights to walls
+        - allows tokens to look over or under walls and to move over or under them according to relative height
+        - https://wiki.theripper93.com/free/wall-height
+        - setting `token height` in token properties to anything other than `0` will override automatic calculation, making `computed token height` equal to the input value
+            - `token height` set to 0 sets `base height` to 5
+            - `computed token height` is `(base height * token scale) + elevation`
+            - `computed token height` must be higher than wall height to see over, not equal
+                - wall `5`, token height `5` can't see
+                - wall `5`, token height `5`, elevation `1` can see
+                - wall `5`, token height `5`, scale `1.1` can see
+                - wall `5`, token height `6` can see
+                - wall `10`, token height `5`, scale `2` can see other side but not tokens near wall
+                - wall `10`, token height `5`, scale `2.16` can see tokens on other side next to the wall
+        - used with `baileywiki`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/magicitems
     -v10
     - adds the ability to create magical items with spells or feats that belong to the item itself, such as staffs or magic wands, which will be automatically inherited from the character who owns the item
@@ -320,9 +346,10 @@ Legend v1.0.32
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/stairways
         v10-11
         - create buttons that look similar to doors but will teleport on a click instead of open/close
-- <span style="background:indigo">![_____](tags/indigo.png)</span>https://foundryvtt.com/packages/multiface-tiles
+- <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/multiface-tiles
     -v10-11
-    -  quickly alter the look of your tiles
+    - quickly alter the look of your tiles
+    -setting `tile->trigger->action->switch tile image->change to->next` will go to next image in `tile->trigger->images`
     - used with `baileywiki`
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/token-variants
         -v10-11
@@ -370,10 +397,17 @@ Legend v1.0.32
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/polmap
     -v10
     - allows the GM to color hexes/squares according to who owns the territory
-- <span style="background:indigo">![_____](tags/indigo.png)</span>https://foundryvtt.com/packages/quick-encounters
+    - the `color` is on a layer `above the token layer`
+- <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/quick-encounters
     -v10-11
     - save tokens into a `Quick Encounter Journal Entry`, marked with a single Map Note on the Scene 
     - O `token-mold`
+    - drag tokens onto a journal entry and it will prompt, close window and `drag the journal entry` with the token links onto the map otherwise they will spawn in the center of the map when `run QE` is clicked
+        - use `run QE` to place tokens at center of journal on map, will prob be all smashed together on one tile
+        - use `add tokens/tiles` to add any selected tokens to the list
+            - this deletes the original token from the map and won't delete it at the end if you choose remove all. 
+        - click a `token image` to remove it from the list
+        - click `update` to save any changes to the list
     - used with `baileywiki`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/quickscale
     -v10-11
@@ -524,9 +558,11 @@ Legend v1.0.32
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/door-colors
     -v10
         - GM users can change the color of door icons through the wall configuration window
-- <span style="background:indigo">![_____](tags/indigo.png)</span>https://foundryvtt.com/packages/tile-scroll 
+- <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/tile-scroll 
   -v10-11
   - Scroll, rotate, and repeat tiles over time
+  - `tile->animation->scroll->enabled`
+  - move left 0, up 90, right 180, down 270
   - replaces `Parallaxia` 
   - <span style="background:brown">![_____](tags/brown.png)</span>https://foundryvtt.com/packages/parallaxia
     -v9
@@ -538,12 +574,6 @@ Legend v1.0.32
     - change adjectives to larger list
     - `check` config, `check` overwrite display name (owner)
     - `change settings in actor tab`
-- <span style="background:indigo">![_____](tags/indigo.png)</span>https://foundryvtt.com/packages/wall-height
-    -v10-11
-    - allows setting vertical heights to walls
-    - allows tokens to look over or under walls and to move over or under them according to relative height
-    - https://wiki.theripper93.com/free/wall-height
-    - used with `baileywiki`
 ## `combat chat - probably not compatible`
 - [jump to nav](#navigation)
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/midi-qol
@@ -978,7 +1008,7 @@ Legend v1.0.32
     - Artifact Items - Brown/Dark Orange
     - Spells - Light blue
     - Features - Turquoise
-- <span style="background:indigo">![_____](tags/indigo.png)</span>https://foundryvtt.com/packages/scene-packer
+- <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/scene-packer
     -v10-11
     - DD
     - help content creators package up Scenes and Adventures
@@ -1085,6 +1115,7 @@ Legend v1.0.32
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/sequencer
         -v10-11
         - module that lets you play visual effects in your scenes, attaching them to tokens or other elements, animating them, quickly and easily removing them
+        - https://fantasycomputer.works/FoundryVTT-Sequencer/#/
         - the following settings could be disabled but needs to be reenabled if an animation is `stuck` like `witch bolt`
         - `set` off `show sequencer tools`
         - `set` off `show sequencer tools in token controls`
@@ -1092,6 +1123,8 @@ Legend v1.0.32
         - Sequencer.DatabaseViewer.show()
         - Sequencer.EffectManager.show()
         - canvas.scene.unsetFlag("sequencer", "effects")
+        - user the database viewer to find shorthand paths like `animated-spell-effects-cartoon.energy.25` to use in sequencer.file() `macros`
+            - as opposed to `modules/animated-spell-effects-cartoon/spell-effects/cartoon/energy/energy_25_800x800.webm`
         ```
         ui.controls.controls.find(l => l.layer === 'sequencerInterfaceLayer').tools.find(t => t.name === 'effectviewer').onClick()
         ```
@@ -1580,7 +1613,10 @@ Legend v1.0.32
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/animated-maps
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/animated-tokens
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/animated-spell-effects
-- <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/animated-spell-effects-cartoon
+- <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/animated-spell-effects-cartoon
+    -v10
+    - Jack Kerouac's Animated Spell Effects: Cartoon
+    - More than 500 FREE animated cartoon effects for spells for use with various VTT's in the top-down/overhead perspective. Also, dozens of individual elements for modules like Sequencer to make your own effects
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/jaamod
     -v10-11
     - Animated Art for use with VTT's in the top-down/overhead perspective
