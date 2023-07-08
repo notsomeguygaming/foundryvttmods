@@ -20,7 +20,7 @@
 - [jump to additional tests](#additional-tests)
 - [jump to absolute bottom](#absolute-bottom)
 
-Legend v1.0.33
+Legend v1.0.34
 - Foundry Build V10 291
 - DND 5e System 2.1.5
 - descriptions and similar mods grouped under bulletpoints
@@ -173,48 +173,6 @@ Legend v1.0.33
         -v10
         - seems like it's similar to fogmanager but I can't get it to work correctly
         - just use `fogmanager`
-- <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/levels
-  -v10-11
-  - D `wall-height`
-  - https://wiki.theripper93.com/levels
-  - `basic tutorial` https://www.youtube.com/watch?v=ELlweNunn4g
-  - `updated tutorial` https://www.youtube.com/watch?v=xmGxEkmJblE
-  - Create maps with multiple vertical levels
-  - uses floor `elevations`    0-9    10-19   20-29   etc
-  - floor `roof` uses `hide(br mode)`, `fade(occlusion)`
-  - `highest roof` uses `any except 'none' but usually 'show'(br mode)`, `fade(occlusion)`
-  - with `global illumination` off, take the highest floor tile height(top) and set the roof to the same height (bottom)
-    - example 2 story with roof
-        - level 1 tile `0-9`
-        - level 2 tile `10-19`
-        - level 3 roof `19-infinite` with roof tile `is roof` on
-    - if that doesn't work for whatever reason, may need `global illumination` on if the roof tiles are still black and not showing
-        - if `betterroofs` is not enabled, that can also cause the black tiles
-  - make a layer from 0 to 99 and `click on it` if you can't see some items in your current scene, as sometimes tokens will be placed on different levels even if the levels popup isn't on
-  - used with `baileywiki`
-  - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/betterroofs
-    -v10-11
-    - enhances Foundry's overhead tile vision functionality
-    - https://wiki.theripper93.com/free/betterroofs
-    - If you are using `Levels`, the Top of the tile needs to be set to `Infinity` for the tile to count as a roof, as well as `is a roof` checked
-    - adds `occlusionID` which is useful if you want to hide more than one roof when a token is on that floor
-    - used with `baileywiki` 
-   - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/wall-height
-    -v10-11
-        - allows setting vertical heights to walls
-        - allows tokens to look over or under walls and to move over or under them according to relative height
-        - https://wiki.theripper93.com/free/wall-height
-        - setting `token height` in token properties to anything other than `0` will override automatic calculation, making `computed token height` equal to the input value
-            - `token height` set to 0 sets `base height` to 5
-            - `computed token height` is `(base height * token scale) + elevation`
-            - `computed token height` must be higher than wall height to see over, not equal
-                - wall `5`, token height `5` can't see
-                - wall `5`, token height `5`, elevation `1` can see
-                - wall `5`, token height `5`, scale `1.1` can see
-                - wall `5`, token height `6` can see
-                - wall `10`, token height `5`, scale `2` can see other side but not tokens near wall
-                - wall `10`, token height `5`, scale `2.16` can see tokens on other side next to the wall
-        - used with `baileywiki`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/magicitems
     -v10
     - adds the ability to create magical items with spells or feats that belong to the item itself, such as staffs or magic wands, which will be automatically inherited from the character who owns the item
@@ -336,13 +294,56 @@ Legend v1.0.33
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/multilevel-tokens
     -v10
     - Teleport tokens to another location when they move into a particular region
+    - a simple alternative to `levels`, but doesn't stack the tiles
     - `usage:`
     ```
-    drawing layer create a shape for entering
-    drawing layer create a shape for exiting - preferably the same size as the entering one
+    drawing layer -> create a shape for entering
+    drawing layer -> create a shape for exiting - preferably the same size as the entering one
     settings multilevel ->
         teleports in/out -> set teleport identifier on both shapes same name
     ```
+    - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/levels
+        -v10-11
+        - D `wall-height`
+        - https://wiki.theripper93.com/levels
+        - `basic tutorial` https://www.youtube.com/watch?v=ELlweNunn4g
+        - `updated tutorial` https://www.youtube.com/watch?v=xmGxEkmJblE
+        - Create maps with multiple vertical levels
+        - uses floor `elevations`    0-9    10-19   20-29   etc
+        - floor `roof` uses `hide(br mode)`, `fade(occlusion)`
+        - `highest roof` uses `any except 'none' but usually 'show'(br mode)`, `fade(occlusion)`
+        - with `global illumination` off, take the highest floor tile height(top) and set the roof to the same height (bottom)
+            - example 2 story with roof
+                - level 1 tile `0-9`
+                - level 2 tile `10-19`
+                - level 3 roof `19-infinite` with roof tile `is roof` on
+            - if that doesn't work for whatever reason, may need `global illumination` on if the roof tiles are still black and not showing
+                - if `betterroofs` is not enabled, that can also cause the black tiles
+        - make a layer from 0 to 99 and `click on it` if you can't see some items in your current scene, as sometimes tokens will be placed on different levels even if the levels popup isn't on
+        - used with `baileywiki`
+        - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/betterroofs
+            -v10-11
+            - enhances Foundry's overhead tile vision functionality
+            - https://wiki.theripper93.com/free/betterroofs
+            - If you are using `Levels`, the Top of the tile needs to be set to `Infinity` for the tile to count as a roof, as well as `is a roof` checked
+            - adds `occlusionID` which is useful if you want to hide more than one roof when a token is on that floor
+            - used with `baileywiki` 
+        - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/wall-height
+            -v10-11
+                - allows setting vertical heights to walls
+                - allows tokens to look over or under walls and to move over or under them according to relative height
+                - https://wiki.theripper93.com/free/wall-height
+                - setting `token height` in token properties to anything other than `0` will override automatic calculation, making `computed token height` equal to the input value
+                    - `token height` set to 0 sets `base height` to 5
+                    - `computed token height` is `(base height * token scale) + elevation`
+                    - `computed token height` must be higher than wall height to see over, not equal
+                        - wall `5`, token height `5` can't see
+                        - wall `5`, token height `5`, elevation `1` can see
+                        - wall `5`, token height `5`, scale `1.1` can see
+                        - wall `5`, token height `6` can see
+                        - wall `10`, token height `5`, scale `2` can see other side but not tokens near wall
+                        - wall `10`, token height `5`, scale `2.16` can see tokens on other side next to the wall
+                - used with `baileywiki`
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/stairways
         v10-11
         - create buttons that look similar to doors but will teleport on a click instead of open/close
