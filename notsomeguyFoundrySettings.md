@@ -1,6 +1,6 @@
 # <span style="background:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);color:white;text-shadow: 2px 2px black;border-radius:15px">notsomeguy's fantastical list of FoundryVTT Mod Settings</span>
 
-Legend v1.0.3
+Legend v1.0.4
 - Foundry Build V10 291
 - DND 5e System 2.1.5
 ## `navigation`
@@ -96,6 +96,9 @@ Legend v1.0.3
 - dfreds convenient effects 
     - W (`import` custom effects from `sidebar icon` if have file, mostly because some light is too bright)
     - W app controls permission     `game master / trusted player`
+    - W chat message permission     `game master / none`
+    - W show chat message effect description    `on add or remove / never`
+    - WO allow player custom effects     -/+
 - dfreds effects panel
     - UO show disabled effects   +/+
     - UO show passive effects   -/+
@@ -108,7 +111,9 @@ Legend v1.0.3
 - drag ruler
     - W show GM ruler to players   +/-
     - W allow pathfinding for players   -/+
-    - U pathfinding by default (for players, dm off otherwise can't move tokens over walls) -/+
+    - U pathfinding by default  -/+
+        - on for players, dm 
+        - off for dm means you can't drag tokens over walls though be careful when off as they can see through walls they float over, alternatively just use `monks-little-details` hotkey to teleport the tokens without dragging
 - drag upload
     - W change path to `dragupload/uploaded/myname/myworld`
 - dungeon draw
@@ -338,7 +343,7 @@ Firefox -
     - UO hide switch speed button  (OFF if you have an alternate speed like flying) -/+ 
     - U hide toggle terrain button  (don't really need to toggle it)   -/+
 - <span style="background:ivory">![_____](tags/ivory.png)</span>drag ruler
-    - U pathfinding by default (for players otherwise need to use hotkey, dm off otherwise can't move tokens over walls and dm can't use hotkey) -/+
+    - U pathfinding by default -/+
 - <span style="background:ivory">![_____](tags/ivory.png)</span>drag upload
     - W change path to `dragupload/uploaded/myname/myworld`
 - monks combat details
@@ -399,6 +404,15 @@ Firefox -
 - `double right click` targets a hostile token
 - drag a token onto another character sheet to perform a `polymorph`, use `restore transformation` at top of character sheet to revert
 - on `actors` button, create a token type `group` and add tokens to see `total hp` of tokens, set `permissions` so all can see. inventory is `copy` based
+- scalegrid 
+    - quick and dirty grid fix
+    - open scene grid config tool (L) and set scale to 2
+    - set opacity of grid to 0 so we can see the map grid
+    - zoom in on the center of the map
+    - use the grid scaler tool 3x3 to get a portion
+    - use the ruler buttons and click the _ left , | top of one of the grid tiles
+    - grid opacity 1, don't turn opacity 1 before the rulers or you won't be able to click the map
+    - if the map is too big the alignment will always be slightly off
 ## `quick mod hotkey controls`
 - [jump to nav](#navigation)
 - aedifs-tactical-grid
@@ -416,7 +430,7 @@ Firefox -
     - hold `alt` to join wall ends
     - `double click` to create a new wall point
     - `ctrl rightclick` on a secret door turns it into a regular door `if not using smart doors`
-- monks-active-details 
+- monks-little-details 
     - hold `M` then `left click` to move selected characters
 - monks-tokenbar
     - `left click` on token once to pan to it
