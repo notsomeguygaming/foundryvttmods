@@ -1,0 +1,929 @@
+{
+  "name": "Custom Convenient Effects",
+  "img": "modules/dfreds-convenient-effects/images/magic-palm.svg",
+  "type": "consumable",
+  "system": {
+    "description": {
+      "value": "",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "autoDestroy": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "consumableType": "potion"
+  },
+  "effects": [
+    {
+      "changes": [
+        {
+          "key": "flags.midi-qol.grants.advantage.attack.all",
+          "mode": 0,
+          "value": "1",
+          "priority": 0
+        },
+        {
+          "key": "ATL.light.dim",
+          "mode": 5,
+          "value": "10",
+          "priority": 50
+        },
+        {
+          "key": "ATL.light.color",
+          "mode": 5,
+          "value": "#ffffff",
+          "priority": 50
+        },
+        {
+          "key": "ATL.light.alpha",
+          "mode": 5,
+          "value": "0.10",
+          "priority": 50
+        },
+        {
+          "key": "ATL.light.animation",
+          "mode": 5,
+          "value": "{\"type\": \"pulse\",\"speed\": 1,\"intensity\": 1}",
+          "priority": 50
+        },
+        {
+          "key": "macro.tokenMagic",
+          "mode": 0,
+          "value": "glow",
+          "priority": 0
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": 60,
+        "startRound": null,
+        "startTime": 1686205831,
+        "startTurn": null,
+        "turns": null,
+        "combat": null
+      },
+      "flags": {
+        "core": {
+          "statusId": "Convenient Effect: Faerie Fire"
+        },
+        "dfreds-convenient-effects": {
+          "description": "Grants advantage to all who attack for 1 minute",
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": []
+        },
+        "times-up": {
+          "isPassive": false
+        },
+        "dae": {
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "stackable": "noneName",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        }
+      },
+      "icon": "icons/magic/fire/projectile-meteor-salvo-strong-teal.webp",
+      "label": "Faerie Fire",
+      "origin": null,
+      "tint": null,
+      "transfer": false,
+      "_id": "FOYFClNodFKkaynM"
+    },
+    {
+      "changes": [
+        {
+          "key": "flags.midi-qol.grants.disadvantage.attack.all",
+          "mode": 0,
+          "value": "1",
+          "priority": 0
+        },
+        {
+          "key": "flags.midi-qol.advantage.ability.save.dex",
+          "mode": 0,
+          "value": "1",
+          "priority": 0
+        },
+        {
+          "key": "macro.tokenMagic",
+          "mode": 0,
+          "value": "Evade Stance",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": 1686205831,
+        "startTurn": null,
+        "turns": null,
+        "combat": null
+      },
+      "flags": {
+        "core": {
+          "statusId": "Convenient Effect: Dodge"
+        },
+        "dfreds-convenient-effects": {
+          "description": "Grants disadvantage to all who attack and advantage on all dexterity saving throws until next turn",
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": []
+        },
+        "dae": {
+          "specialDuration": [
+            "turnStart"
+          ],
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "stackable": "noneName",
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "times-up": {
+          "isPassive": false
+        }
+      },
+      "icon": "modules/dfreds-convenient-effects/images/dodging.svg",
+      "label": "Dodge",
+      "origin": null,
+      "tint": null,
+      "transfer": false,
+      "_id": "pUDPwPZ9lpplKiUF"
+    },
+    {
+      "changes": [
+        {
+          "key": "ATL.light.dim",
+          "mode": 5,
+          "value": "40",
+          "priority": 50
+        },
+        {
+          "key": "ATL.light.bright",
+          "mode": 5,
+          "value": "20",
+          "priority": 50
+        },
+        {
+          "key": "ATL.light.color",
+          "mode": 5,
+          "value": "#f98026",
+          "priority": 50
+        },
+        {
+          "key": "ATL.light.alpha",
+          "mode": 5,
+          "value": "0.10",
+          "priority": 50
+        },
+        {
+          "key": "ATL.light.animation",
+          "mode": 5,
+          "value": "{\"type\": \"torch\",\"speed\": 1,\"intensity\": 1}",
+          "priority": 50
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": 3600,
+        "startRound": null,
+        "startTime": 1686205831,
+        "startTurn": null,
+        "turns": null,
+        "combat": null
+      },
+      "flags": {
+        "core": {
+          "statusId": "Convenient Effect: Torch"
+        },
+        "dfreds-convenient-effects": {
+          "description": "Adds torch light for 1 hour (requires ATL)",
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": []
+        },
+        "times-up": {
+          "isPassive": false
+        },
+        "dae": {
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "stackable": "noneName",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false
+        }
+      },
+      "icon": "icons/sundries/lights/torch-black.webp",
+      "label": "Torch",
+      "origin": null,
+      "tint": null,
+      "transfer": false,
+      "_id": "0vahndR8Flk6JpSp"
+    },
+    {
+      "changes": [
+        {
+          "key": "ATL.sight.range",
+          "mode": 4,
+          "value": "120",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": 1686639073,
+        "startTurn": null,
+        "turns": null,
+        "combat": null
+      },
+      "flags": {
+        "core": {
+          "statusId": ""
+        },
+        "dfreds-convenient-effects": {
+          "description": "",
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": []
+        },
+        "times-up": {
+          "isPassive": false
+        },
+        "dae": {
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "stackable": "noneName",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false
+        }
+      },
+      "icon": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+      "label": "Vision Devil Sight - 120ft",
+      "origin": "Item.hYRw0ZwNi1b0J8jA",
+      "tint": null,
+      "transfer": false,
+      "_id": "394NG7khJCEDbvbv"
+    },
+    {
+      "changes": [
+        {
+          "key": "ATL.light.dim",
+          "mode": 5,
+          "value": "40",
+          "priority": 50
+        },
+        {
+          "key": "ATL.light.bright",
+          "mode": 5,
+          "value": "10",
+          "priority": 50
+        },
+        {
+          "key": "ATL.light.color",
+          "mode": 5,
+          "value": "#5555ff",
+          "priority": 50
+        },
+        {
+          "key": "ATL.light.alpha",
+          "mode": 5,
+          "value": "0.10",
+          "priority": 50
+        },
+        {
+          "key": "ATL.light.animation",
+          "mode": 5,
+          "value": "{\"type\": \"pulse\", \"speed\": 3,\"intensity\": 1}",
+          "priority": 50
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": 3600,
+        "startRound": 1,
+        "startTime": 1686205231,
+        "startTurn": 0,
+        "turns": null,
+        "combat": null
+      },
+      "flags": {
+        "core": {
+          "statusId": "Convenient Effect: Light"
+        },
+        "dfreds-convenient-effects": {
+          "description": "Emits 20/40 light for 1 hour (requires ATL)",
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": []
+        },
+        "times-up": {
+          "isPassive": false
+        },
+        "dae": {
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "stackable": "noneName",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false
+        }
+      },
+      "icon": "icons/magic/light/explosion-star-blue-small.webp",
+      "label": "Light",
+      "origin": null,
+      "tint": null,
+      "transfer": false,
+      "_id": "mvBTha8ZNoYkPkKQ"
+    },
+    {
+      "changes": [
+        {
+          "key": "ATL.sight.range",
+          "mode": 3,
+          "value": "30",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": 1686639073,
+        "startTurn": null,
+        "turns": null,
+        "combat": null
+      },
+      "flags": {
+        "core": {
+          "statusId": ""
+        },
+        "dfreds-convenient-effects": {
+          "description": "",
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": []
+        },
+        "times-up": {
+          "isPassive": false
+        },
+        "dae": {
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "stackable": "noneName",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false
+        }
+      },
+      "icon": "icons/magic/light/explosion-star-glow-yellow.webp",
+      "label": "Vision Reduced - 30 ft max",
+      "origin": "Item.hYRw0ZwNi1b0J8jA",
+      "tint": null,
+      "transfer": false,
+      "_id": "8El8sV3K6nPvvyoC"
+    },
+    {
+      "changes": [
+        {
+          "key": "ATL.sight.range",
+          "mode": 4,
+          "value": "60",
+          "priority": 20
+        },
+        {
+          "key": "ATL.sight.visionMode",
+          "mode": 4,
+          "value": "darkvision",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": 1686639073,
+        "startTurn": null,
+        "turns": null,
+        "combat": null
+      },
+      "flags": {
+        "core": {
+          "statusId": ""
+        },
+        "dfreds-convenient-effects": {
+          "description": "",
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": []
+        },
+        "times-up": {
+          "isPassive": false
+        },
+        "dae": {
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "stackable": "noneName",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false
+        }
+      },
+      "icon": "icons/magic/light/explosion-star-blue-yellow.webp",
+      "label": "Vision Darkvision - 60ft",
+      "origin": "Item.hYRw0ZwNi1b0J8jA",
+      "tint": null,
+      "transfer": false,
+      "_id": "JqIbwdp66EB9kJsR"
+    },
+    {
+      "changes": [
+        {
+          "key": "ATL.detectionModes.feelTremor.range",
+          "mode": 2,
+          "value": "60",
+          "priority": 20
+        },
+        {
+          "key": "ATL.sight.visionMode",
+          "mode": 4,
+          "value": "tremorsense",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": 1686639073,
+        "startTurn": null,
+        "turns": null,
+        "combat": null
+      },
+      "flags": {
+        "core": {
+          "statusId": ""
+        },
+        "dfreds-convenient-effects": {
+          "description": "",
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": []
+        },
+        "times-up": {
+          "isPassive": false
+        },
+        "dae": {
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "stackable": "noneName",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false
+        }
+      },
+      "icon": "icons/magic/light/explosion-star-glow-silhouette.webp",
+      "label": "Vision Tremorsense - 60ft",
+      "origin": "Item.hYRw0ZwNi1b0J8jA",
+      "tint": null,
+      "transfer": false,
+      "_id": "YrqLByX6PCP9psrB"
+    },
+    {
+      "changes": [
+        {
+          "key": "ATL.sight.range",
+          "mode": 4,
+          "value": "60",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": 1686639073,
+        "startTurn": null,
+        "turns": null,
+        "combat": null
+      },
+      "flags": {
+        "core": {
+          "statusId": ""
+        },
+        "dfreds-convenient-effects": {
+          "description": "",
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": []
+        },
+        "times-up": {
+          "isPassive": false
+        },
+        "dae": {
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "stackable": "noneName",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false
+        }
+      },
+      "icon": "icons/magic/light/explosion-star-large-orange.webp",
+      "label": "Vision Daylight - 60ft",
+      "origin": "Item.hYRw0ZwNi1b0J8jA",
+      "tint": null,
+      "transfer": false,
+      "_id": "Ad5w9J9IIrecJPYG"
+    },
+    {
+      "changes": [
+        {
+          "key": "ATL.sight.range",
+          "mode": 4,
+          "value": "30",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": 1686639073,
+        "startTurn": null,
+        "turns": null,
+        "combat": null
+      },
+      "flags": {
+        "core": {
+          "statusId": ""
+        },
+        "dfreds-convenient-effects": {
+          "description": "",
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": []
+        },
+        "times-up": {
+          "isPassive": false
+        },
+        "dae": {
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "stackable": "noneName",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false
+        }
+      },
+      "icon": "icons/magic/light/explosion-star-glow-orange.webp",
+      "label": "Vision Daylight - 30ft",
+      "origin": "Item.hYRw0ZwNi1b0J8jA",
+      "tint": null,
+      "transfer": false,
+      "_id": "VJX8Ns99ZvcNbl4u"
+    },
+    {
+      "changes": [
+        {
+          "key": "ATL.sight.range",
+          "mode": 3,
+          "value": "5",
+          "priority": 20
+        },
+        {
+          "key": "ATL.sight.visionMode",
+          "mode": 5,
+          "value": "monochromatic",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": 1686639073,
+        "startTurn": null,
+        "turns": null,
+        "combat": null
+      },
+      "flags": {
+        "core": {
+          "statusId": ""
+        },
+        "dfreds-convenient-effects": {
+          "description": "",
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": []
+        },
+        "times-up": {
+          "isPassive": false
+        },
+        "dae": {
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "stackable": "noneName",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false
+        }
+      },
+      "icon": "icons/magic/light/explosion-star-small-blue-yellow.webp",
+      "label": "Vision Reduced - 5 ft max",
+      "origin": "Item.hYRw0ZwNi1b0J8jA",
+      "tint": null,
+      "transfer": false,
+      "_id": "tUk6Vc1LakfinZpE"
+    },
+    {
+      "changes": [
+        {
+          "key": "ATL.sight.range",
+          "mode": 3,
+          "value": "0",
+          "priority": 20
+        },
+        {
+          "key": "ATL.sight.visionMode",
+          "mode": 5,
+          "value": "monochromatic",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": 1686639073,
+        "startTurn": null,
+        "turns": null,
+        "combat": null
+      },
+      "flags": {
+        "core": {
+          "statusId": ""
+        },
+        "dfreds-convenient-effects": {
+          "description": "",
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": []
+        },
+        "times-up": {
+          "isPassive": false
+        },
+        "dae": {
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "stackable": "noneName",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false
+        }
+      },
+      "icon": "icons/magic/light/explosion-star-small-blue-yellow.webp",
+      "label": "Vision Reduced - 0 ft max",
+      "origin": "Item.hYRw0ZwNi1b0J8jA",
+      "tint": "#595959",
+      "transfer": false,
+      "_id": "AFVErzc9tgXLWbJH"
+    }
+  ],
+  "flags": {
+    "exportSource": {
+      "system": "dnd5e",
+      "coreVersion": "10.291",
+      "systemVersion": "2.1.5"
+    }
+  }
+}
