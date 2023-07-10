@@ -20,7 +20,7 @@
 - [jump to additional tests](#additional-tests)
 - [jump to absolute bottom](#absolute-bottom)
 
-Legend v1.0.34
+Legend v1.0.35
 - Foundry Build V10 291
 - DND 5e System 2.1.5
 - descriptions and similar mods grouped under bulletpoints
@@ -46,6 +46,7 @@ Legend v1.0.34
 
 ## `Good stuff to use (in blue)`
 ### `DM`
+- these are mods that the DM will be able to use and configure before or during play
 - [jump to nav](#navigation)
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/advanced-drawing-tools
     -v10-11
@@ -76,36 +77,17 @@ Legend v1.0.34
     -v10-11
     - allows you to drag and drop an entire folder of tokens or journal entries onto the canvas
     - interaction with `z-scatter` works
-- <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/drag-ruler
+- <span style="background:ivory">![_____](tags/ivory.png)</span> https://foundryvtt.com/packages/doormacro
     -v10-11
-    - colored distance calculation
-    - token pathfinding
-    - `unset` show GM ruler to players
-    - D <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/routinglib
-        -v10-11
-        - used for pathfinding
-    - D <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/elevation-drag-ruler
-        -v10-11
-        - DnD5e Drag Ruler Integration
-        - DD
-        - quickly change between their different types of movement speed (swimming, flying, burrowing, and climbing)
-        - `E)` toggle all difficult terrain for any movement speed for that token
-    - O <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/hex-size-support
-        -v10
-        - DD
-        - for hex maps
-    - O <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/enhanced-terrain-layer
-        -v10
-        - DD
-        - calculate difficult terrain polygon 
-        - `set` terrain cost `2` to represent difficult terrain
-        - `I think it's currently bugged as it works for the GM but not other players unless they reload, sometimes the GM needs to reload too`
-        - `last checked Fv10.291 dnd2.1.5`
-        - O <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/terrain-ruler
-            -v10
-            - DD
-            - rulers respect difficult terrain that was put down using the Enhanced Terrain Layer module.
-            - `only used if enhanced-terrain-layer is active`
+    - can apply a macro to a door. You can trigger this macro when the door is:
+    - opened
+    - closed
+    - locked
+    - unlocked
+    - hidden
+    - revealed
+    - `there is a little button on the top right of the door properties window`
+    - `paste the full macro into the box, not the name of the macro`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/dragupload
     -v10
     - drag files to create quick tokens
@@ -173,16 +155,6 @@ Legend v1.0.34
         -v10
         - seems like it's similar to fogmanager but I can't get it to work correctly
         - just use `fogmanager`
-- <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/magicitems
-    -v10
-    - adds the ability to create magical items with spells or feats that belong to the item itself, such as staffs or magic wands, which will be automatically inherited from the character who owns the item
-    - new tab named 'Magic Item' 
-    - `magic items` will have a little wand icon next to the name in the `inventory`
-    - there is a `compendium` with some 
-    - `usage:` mark the item as a `magic item` in the `magic item tab` AND make sure you `check the box` for `identified` in the `details` tab. then there will be a little `magic wand` next to the item name. then you can see all the added features and spells at the bottom of the features page
-    - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/items-with-spells-5e
-        -v10-11
-        - possible alternative to `magicitems` if it were to stop working
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/monks-tokenbar
     -v10-11
     - ask for rolls
@@ -559,6 +531,9 @@ Legend v1.0.34
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/door-colors
     -v10
         - GM users can change the color of door icons through the wall configuration window
+    - <span style="background:gold">![_____](tags/gold.png)</span> https://foundryvtt.com/packages/designerdoors
+        -v10-11
+        - globally change all door control icons to a new unique set, or to assign custom icons to individual doors
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/tile-scroll 
   -v10-11
   - Scroll, rotate, and repeat tiles over time
@@ -576,6 +551,7 @@ Legend v1.0.34
     - `check` config, `check` overwrite display name (owner)
     - `change settings in actor tab`
 ## `combat chat - probably not compatible`
+- these are mods that override the base functionality of rolling abilities or attacks, are usually not compatible and may create duplicate rolls or unexpected behavior
 - [jump to nav](#navigation)
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/midi-qol
     -v10-11
@@ -621,6 +597,7 @@ Legend v1.0.34
         -v9
         - looks similar to ready-set-roll-5e
 ### `player`
+- these are mods that players may be able to use or customize
 - [jump to nav](#navigation)
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/sweetnothings
     -v10-11
@@ -667,12 +644,55 @@ Legend v1.0.34
             -v10
             - autocompletion for commands and @ parameters in chat
             - `monks chat timer` uses it
+- <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/drag-ruler
+    -v10-11
+    - colored distance calculation
+    - token pathfinding
+    - `unset` show GM ruler to players
+    - D <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/routinglib
+        -v10-11
+        - used for pathfinding
+    - D <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/elevation-drag-ruler
+        -v10-11
+        - DnD5e Drag Ruler Integration
+        - DD
+        - quickly change between their different types of movement speed (swimming, flying, burrowing, and climbing)
+        - `E)` toggle all difficult terrain for any movement speed for that token
+    - O <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/hex-size-support
+        -v10
+        - DD
+        - for hex maps
+    - O <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/enhanced-terrain-layer
+        -v10
+        - DD
+        - calculate difficult terrain polygon 
+        - `set` terrain cost `2` to represent difficult terrain
+        - `I think it's currently bugged as it works for the GM but not other players unless they reload, sometimes the GM needs to reload too`
+        - `last checked Fv10.291 dnd2.1.5`
+        - O <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/terrain-ruler
+            -v10
+            - DD
+            - rulers respect difficult terrain that was put down using the Enhanced Terrain Layer module.
+            - `only used if enhanced-terrain-layer is active`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/easy-polls
     -v10-11
     - just typing /poll will popup a dialog
     - `/poll question`
     - `ans1`
     - `ans2`
+- <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/easy-target
+    -v10-11
+    - `Target tokens` while on any layer with `Alt + Click`. 
+    - `Target all tokens in an AoE` while on any layer by `Alt + Clicking` inside its area. 
+    - `clear all targets` by selecting nothing or by keybind
+    - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/smarttarget
+        -v10-11
+        - Target with `Alt+Click`
+        - For players, target by just left clicking a non-owned token (Alt+Click to target owned token)
+        - Target all tokens in a template by Alt+Clicking the template (shift modifier and standard\sticky behavior apply)
+        - Show portraits instead of colored pips to indicate targets
+        - Customize color\shape of the targeting reticule
+        - `have to manually select/deselect all tokens unlike easy target, having custom crosshairs is the best part`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/followme
     -v10
     - allows tokens to follow or be followed by other tokens
@@ -786,6 +806,7 @@ Legend v1.0.34
 ---
 
 ### `loot`
+- mods that deal with trading and item containers
 - [jump to nav](#navigation)
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/item-piles
     -v10-11
@@ -843,8 +864,19 @@ Legend v1.0.34
         - move an item instead of copying it between two `owned` actors.
         - Holding `Shift` changes the value by 5 instead of 1. Holding `Ctrl` changes the value by 50 instead of 1.
         - `You should not expect this module to work with modules that overhaul or destroy core roll behavior, particularly WIRE, RSR, and MIDI. These modules are unsupported, and any compatibility is nothing but a happy accident.`
+- <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/magicitems
+    -v10
+    - adds the ability to create magical items with spells or feats that belong to the item itself, such as staffs or magic wands, which will be automatically inherited from the character who owns the item
+    - new tab named 'Magic Item' 
+    - `magic items` will have a little wand icon next to the name in the `inventory`
+    - there is a `compendium` with some 
+    - `usage:` mark the item as a `magic item` in the `magic item tab` AND make sure you `check the box` for `identified` in the `details` tab. then there will be a little `magic wand` next to the item name. then you can see all the added features and spells at the bottom of the features page
+    - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/items-with-spells-5e
+        -v10-11
+        - possible alternative to `magicitems` if it were to stop working
 ---
 ### `background and dependencies`
+- mods that are dependencies, something that doesn't really require a lot of configuring, or not something that gets interacted with
 - [jump to nav](#navigation)
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/advanced-macros
     -v10-11
@@ -951,19 +983,6 @@ Legend v1.0.34
         - `Right-clicking` an effect will let you delete it. A GM can shift-right-click an effect for quick deletion.
         - `Ctrl-double-clicking` an effect will open its config.
         - `almost the same as dfreds-effects-panel but dfreds has better view permissions options`
-- <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/easy-target
-    -v10-11
-    - `Target tokens` while on any layer with `Alt + Click`. 
-    - `Target all tokens in an AoE` while on any layer by `Alt + Clicking` inside its area. 
-    - `clear all targets` by selecting nothing or by keybind
-    - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/smarttarget
-        -v10-11
-        - Target with `Alt+Click`
-        - For players, target by just left clicking a non-owned token (Alt+Click to target owned token)
-        - Target all tokens in a template by Alt+Clicking the template (shift modifier and standard\sticky behavior apply)
-        - Show portraits instead of colored pips to indicate targets
-        - Customize color\shape of the targeting reticule
-        - `have to manually select/deselect all tokens unlike easy target, having custom crosshairs is the best part`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/image-previewer
     -v10
     - preview images when you hover over them in the file picker menu
@@ -1009,18 +1028,6 @@ Legend v1.0.34
     - Artifact Items - Brown/Dark Orange
     - Spells - Light blue
     - Features - Turquoise
-- <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/scene-packer
-    -v10-11
-    - DD
-    - help content creators package up Scenes and Adventures
-    - Scene Journal Pins link to the correct Journal
-    - Actor tokens on a Scene link to the correct Actor
-    - Journals configured for the Scene link correctly
-    - Playlists configured for the Scene link correctly
-    - Imported Journals link correctly to other Journal entries
-    - `Quick Encounters` work, creating working journal pins that you can double-click on and actors that are linked correctly
-    - You can provide a list of Journals and/or Macros that you want to ensure are imported to the world
-    - used with `baileywiki`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/socketlib
     -v10-11
     - DD
@@ -1078,6 +1085,7 @@ Legend v1.0.34
     - force snap tokens in the same square space
     - size snap (`on` separates, `off` stacks)
 ### `effects and lighting`
+- mods that create visual effects
 - [jump to nav](#navigation)
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/tokenmagic
     -v10-11
@@ -1182,6 +1190,7 @@ Legend v1.0.34
         - D Warpgate
 
 ### `content`
+- mods that contain a bunch of premade assets or packs
 - [jump to nav](#navigation)
 - <span style="background:indigo">![_____](tags/indigo.png)</span>https://foundryvtt.com/packages/baileywiki-nuts-and-bolts
     -v10-11
@@ -1226,6 +1235,7 @@ Legend v1.0.34
         - `To get this pack, subscribe to the Foundry Advanced Tier (or higher).`
 
 ### `other`
+- special mods for managing imports and exports, etc
 - [jump to nav](#navigation)
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/foundry-vtt-content-parser 
     -v10-11
@@ -1304,9 +1314,22 @@ Legend v1.0.34
     Restart Foundry to reload the module.
 
     ```
+- <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/scene-packer
+    -v10-11
+    - DD
+    - help content creators package up Scenes and Adventures
+    - Scene Journal Pins link to the correct Journal
+    - Actor tokens on a Scene link to the correct Actor
+    - Journals configured for the Scene link correctly
+    - Playlists configured for the Scene link correctly
+    - Imported Journals link correctly to other Journal entries
+    - `Quick Encounters` work, creating working journal pins that you can double-click on and actors that are linked correctly
+    - You can provide a list of Journals and/or Macros that you want to ensure are imported to the world
+    - used with `baileywiki`
 ---
 
 ## `Testing`
+- mods that aren't part of a blue subcategory in the main list, mods I may not use, or aren't tested
 - [jump to nav](#navigation)
 ### `test DM`
 - [jump to nav](#navigation)
@@ -1688,6 +1711,7 @@ Legend v1.0.34
     - kind of useful when teaching someone how to use foundry
 
 ### `random older version`
+- some mods that are below v10 that looked interesting but not able to test
 - [jump to nav](#navigation)
 - <span style="background:olive">![_____](tags/olive.png)</span>https://foundryvtt.com/packages/showwalls
     -v8
@@ -1744,10 +1768,11 @@ Legend v1.0.34
         - Less Fog
         - DFreds Droppables
 ## `additional tests`
+- random foundry actions and solutions
 - [jump to nav](#navigation)
 - quest permissions [`set default owner`]
 - tables [`df qol gives quick roll btn`]
-- crits full damage - [`midiqol best option`]
+- crits full damage - [`midiqol best option otherwise change in core`]
 - close all doors macro [`also an option in sidebar from something`]
 - party loot [`partyinventory can show marked items then trade, best is prob still make a sheet, item vault is neat`]
 - test combat enemies shown after defeated [`monks bloodsplats`]
@@ -1760,6 +1785,11 @@ Legend v1.0.34
 - figure out how to place documents on map / visibility permissions [`lim can see the title, not open . obs can open`]
 - character sheet view permissions [`limited no stats, observer stats`]
 - check if forien-copy-environment requires activating modules first [`doesn't`]
-
+- mod to set scene darkness level [`smalltime can set darkness based on time`]
+- mod to see walls on different layers [showwalls not updated]
+- best way to draw a straight line and edit size after [draw the wall slightly askew]
+- magical darkness block vision / blindness [perfect vision to set vision in night and in light to 5 and manage with convenient effects to simulate blindness?]
+- automatically run convenient effects [`token effects Macro.dae.CE effect value Prone`] 
+    - https://gitlab.com/tposney/midi-qol/-/issues/511
 ## `absolute bottom`
 - [jump to nav](#navigation)
