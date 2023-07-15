@@ -20,7 +20,7 @@
 - [jump to additional tests](#additional-tests)
 - [jump to absolute bottom](#absolute-bottom)
 
-Legend v1.0.35
+Legend v1.0.36
 - Foundry Build V10 291
 - DND 5e System 2.1.5
 - descriptions and similar mods grouped under bulletpoints
@@ -701,6 +701,7 @@ Legend v1.0.35
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/forien-quest-log
     -v10-11
     - add quests for everyone to see
+    - Hooks.call('ForienQuestLog.Open.QuestLog');
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/illandril-hotbar-uses
     -v10
     - shows item uses/spell slots on hotbar
@@ -918,6 +919,7 @@ Legend v1.0.35
         -v10-11
         - Turn Notifications
         - hide creatures from players while you are creating the encounter, aren't revealed in the combat tracker until they've had their first turn `test`
+            - `they are put on the tracker if the first round has passed`
         - automatically set the status of a creature to defeated once they reach zero HP. `test`
         - can notify if spells change during combat
         - `set` hide until turn
@@ -1289,6 +1291,13 @@ Legend v1.0.35
         - Module Management+ improves upon foundry's vtt Manage Module and Configure Settings windows by adding additional features and functionalities to both managing modules and their settings.
         - good for checking dependencies and mod compatibility
         - `best used in a separate world for mod testing, disabled for normal play`
+    - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/module-profiles
+        -v10-11
+        - allows saving of different combinations of modules
+        - `only activates/deactivates` mods in the list
+        - adds green/red color tag to the mods that are/aren't part of the currently set profile list
+        - `does not transfer configs of individual mods`
+        - for transferring of configs, use `forien-copy-environment`
     - <span style="background:brown">![_____](tags/brown.png)</span>https://foundryvtt.com/packages/monks-player-settings
         v10-11
         - view and edit player settings, as well as keeping your own settings in sync between different browsers
@@ -1516,6 +1525,11 @@ Legend v1.0.35
         -v10-11
         - You can also hold `R` while having multiple tiles/tokens selected; this will make all selected tiles/tokens `turn to face your cursor`, until you release the hotkey.  
         - By holding `Shift+R` (configurable), `rotation will snap to the grid` directions (same directions you'd snap to when doing the default rotation in Foundry; 45° or 60°). With R only, rotation will snap to 5 degrees, though you can completely disable even this snapping in the settings ("Smooth rotation").
+- <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/items-with-rolltables-5e
+    -v10
+    - Allows a rollable table to be attached to an item and rolled from the output chatcard
+    - `Compatible with:  Core dnd5e roller, Minimal Rolling Enhancements`
+    - `Not Compatible with: Better Rolls 5e, Midi QOL`
 ### `test background and dependencies`
 - [jump to nav](#navigation)
 - <span style="background:teal">![_____](tags/teal.png)</span>https://foundryvtt.com/packages/concentrationnotifier
@@ -1791,5 +1805,6 @@ Legend v1.0.35
 - magical darkness block vision / blindness [perfect vision to set vision in night and in light to 5 and manage with convenient effects to simulate blindness?]
 - automatically run convenient effects [`token effects Macro.dae.CE effect value Prone`] 
     - https://gitlab.com/tposney/midi-qol/-/issues/511
+- roll table for flavor text during attack [none]
 ## `absolute bottom`
 - [jump to nav](#navigation)
