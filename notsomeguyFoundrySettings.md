@@ -1,6 +1,6 @@
 # <span style="background:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);color:white;text-shadow: 2px 2px black;border-radius:15px">notsomeguy's fantastical list of FoundryVTT Mod Settings</span>
 
-Legend v1.0.4
+Legend v1.0.5
 - Foundry Build V10 291
 - DND 5e System 2.1.5
 ## `navigation`
@@ -198,9 +198,12 @@ Legend v1.0.4
 - simbuls wild surges
     - W wild magic auto detect  `disabled / enabled`
     - W wild magic surge table name DO NOT USE 10000 wild surges unless you have core->animate roll tables unchecked, it's not even a good list 
-        - (drag into hotbar and edit for name ex: Compendium.foundry_community_tables.community-tables-independent.5uRCMR11qY2Dwrw9 or use regular name in tables list [Wild Magic Surges])
+        - drag into hotbar and edit for name ex: 
+        - `Compendium.foundry_community_tables.community-tables-independent.5uRCMR11qY2Dwrw9` 
+        - `Compendium.my-shared-compendia.rolltables.tYqqT6gjyXzvAarb`
+        - or use regular name in tables list [`Wild Magic Surges`]
         - alternatively create a table called `wild` and drag in [`wild magic surges, moderate, nuisance, extreme`]   
-        - Wild-Magic-Surge-Table / `wild`
+        - `Wild-Magic-Surge-Table / wild`
     - W recharge tides of chaos on surge    -/+
     - U on character sheet of wild magic player under configure special traits, set wild magic type
         - `standard` is on 1
@@ -404,6 +407,11 @@ Firefox -
 - `double right click` targets a hostile token
 - drag a token onto another character sheet to perform a `polymorph`, use `restore transformation` at top of character sheet to revert
 - on `actors` button, create a token type `group` and add tokens to see `total hp` of tokens, set `permissions` so all can see. inventory is `copy` based
+- autoanimations
+    - remove stuck animations from 
+        - `Tile Foreground Layer`
+        - `sequencer effect`
+        - `token effects tab`
 - scalegrid 
     - quick and dirty grid fix
     - open scene grid config tool (L) and set scale to 2
@@ -420,11 +428,21 @@ Firefox -
 - arbron-summoner
     - on the `summoner's sheet`-> features -> new feature with action type `summoning`, drag summon token onto blank square under `summons`
     - on `token sheet you want to summon`, click `summon configuration`, turn on `match proficiency` and `match to hit`
+- crunch-my-party
+    - macros in compendium
 - easy-target
     - hold `alt` and `leftclick / drag` tokens to `target` them
     - hold `alt` and `leftclick` empty space to `deselect` all
+- forien-quest-log
+    - Hooks.call('ForienQuestLog.Open.QuestLog');
 - followme
     - To start following select your token, hold the mouse pointer over whom you wish to follow and press `F`.
+- hotpan
+    - HotPan.toggle();
+    - HotPan.switchOn();
+    - HotPan.switchOff();
+- introduce-me
+    - macros in compendium
 - monks-wall-enhancement
     - hold `ctrl` to draw more walls
     - hold `alt` to join wall ends
@@ -443,12 +461,18 @@ Firefox -
     - limited - `diamond`
     - observer - `square`
     - owner - `circle`
+- pings
+    - `shift + hold left click` to move screen to position for all
 - quick-insert 
     - `ctrl + shift` popup
     - `@` narrow search
 - quickscale
     - `]` enlarge token
     - `\` reset token size to prototype
+- sequencer
+    - Sequencer.DatabaseViewer.show()
+    - Sequencer.EffectManager.show()
+    - canvas.scene.unsetFlag("sequencer", "effects")
 - simbuls-cover-calculator 
     - select token, hover target, `R`
 - smart-doors
@@ -456,6 +480,8 @@ Firefox -
 - sweetnothings
     - whispers `alt + w`
     - reply `alt + r`
+- warpgate
+    - warpgate.spawn('actorname')
 
 ## `absolute bottom`
 - [jump to nav](#navigation)
