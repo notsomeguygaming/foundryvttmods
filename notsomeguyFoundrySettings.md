@@ -1,6 +1,6 @@
 # <span style="background:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);color:white;text-shadow: 2px 2px black;border-radius:15px">notsomeguy's fantastical list of FoundryVTT Mod Settings</span>
 
-Legend v1.0.6
+Legend v1.0.7
 - Foundry Build V10 291
 - DND 5e System 2.1.5
 ## `navigation`
@@ -237,6 +237,7 @@ Legend v1.0.6
     - W disable video support in templates -/+
 - tokenizer
     - W add a frame to the token when opened    +/-
+    - U add a color layer by default    +/-
 - token mold
     - W actors -> settings -> name -> choose adjectives from the following rollable table   `english set of 700` / `english over 4700 random`
 - windows controls
@@ -330,7 +331,7 @@ Firefox -
     - `-` uncheck
 - core
     - UO left click to release objects  -/+
-- <span style="background:ivory">![_____](tags/ivory.png)</span>action pack
+- <span style="background:ivory">![_____](tags/ivory.png)</span> action pack
     - U tray display mode   `automatic / toggle`
         - only really affects GM as players will always be `toggle` regardless of setting
 - combat carousel
@@ -341,18 +342,18 @@ Firefox -
     - UO show disabled effects   +/+
     - UO show passive effects   -/+
     - UO passive effects right click behavior (maybe if you have an effect with a measured template that you need to delete instead of disable at the end of the turn)  `disable / disable`
-- <span style="background:ivory">![_____](tags/ivory.png)</span>dice so nice
+- <span style="background:ivory">![_____](tags/ivory.png)</span> dice so nice
     - UO 3d dice settings   customize dice
 - dnd5e drag ruler integration
     - UO hide switch speed button  (OFF if you have an alternate speed like flying) -/+ 
     - U hide toggle terrain button  (don't really need to toggle it)   -/+
-- <span style="background:ivory">![_____](tags/ivory.png)</span>drag ruler
+- <span style="background:ivory">![_____](tags/ivory.png)</span> drag ruler
     - U pathfinding by default -/+
-- <span style="background:ivory">![_____](tags/ivory.png)</span>drag upload
+- <span style="background:ivory">![_____](tags/ivory.png)</span> drag upload
     - W change path to `dragupload/uploaded/myname/myworld`
 - monks combat details
     - UO volume (your turn notification)    `60/60`
-- <span style="background:ivory">![_____](tags/ivory.png)</span>monks hotbar expansion
+- <span style="background:ivory">![_____](tags/ivory.png)</span> monks hotbar expansion
     - U number of rows  `5/3`
     - U reverse     -/+
     - U hide the first row    -/+
@@ -370,12 +371,14 @@ Firefox -
 - simple calendar
     - U open on load    +/-
         - should basically auto close after first run if smalltime is on anyway
-- <span style="background:ivory">![_____](tags/ivory.png)</span>tactical grid
+- <span style="background:ivory">![_____](tags/ivory.png)</span> tactical grid
     - U display distances on ruler drag  (if you don't want to use the keybind)   -/+
     - UO in keybinds add button for `display distances`
-- <span style="background:ivory">![_____](tags/ivory.png)</span>token action hud
+- <span style="background:ivory">![_____](tags/ivory.png)</span> token action hud
     - U direction   `up / down`
-- <span style="background:ivory">![_____](tags/ivory.png)</span>windows controls
+- <span style="background:ivory">![_____](tags/ivory.png)</span> tokenizer
+    - U add a color layer by default    +/-
+- <span style="background:ivory">![_____](tags/ivory.png)</span> windows controls
     - U organized minimize    `top / bottom taskbar`
 ## `Other Notes`
 - [jump to nav](#navigation)
@@ -431,6 +434,9 @@ Firefox -
     - on `token sheet you want to summon`, click `summon configuration`, turn on `match proficiency` and `match to hit`
 - crunch-my-party
     - macros in compendium
+        - `group party` macro adds the selected tokens to a group and asks for the `party token` name. just call it `party`
+        - `toggle party` macro toggles whether the party or group is shown on the screen
+    - be sure to have a `party token` with the `same name` as the assigned party, `and` have the party token `on the scene`
 - easy-target
     - hold `alt` and `leftclick / drag` tokens to `target` them
     - hold `alt` and `leftclick` empty space to `deselect` all
