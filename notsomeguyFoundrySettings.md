@@ -1,6 +1,6 @@
 # <span style="background:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);color:white;text-shadow: 2px 2px black;border-radius:15px">notsomeguy's fantastical list of FoundryVTT Mod Settings</span>
 
-Legend v1.0.5
+Legend v1.0.6
 - Foundry Build V10 291
 - DND 5e System 2.1.5
 ## `navigation`
@@ -99,6 +99,7 @@ Legend v1.0.5
     - W chat message permission     `game master / none`
     - W show chat message effect description    `on add or remove / never`
     - WO allow player custom effects     -/+
+        - may require GM to click `import custom effects` in order to create an item file so that players can import
 - dfreds effects panel
     - UO show disabled effects   +/+
     - UO show passive effects   -/+
