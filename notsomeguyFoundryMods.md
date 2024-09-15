@@ -20,7 +20,7 @@
 - [jump to additional tests](#additional-tests)
 - [jump to absolute bottom](#absolute-bottom)
 
-Legend v1.0.36
+Legend v1.0.38
 - Foundry Build V10 291
 - DND 5e System 2.1.5
 - descriptions and similar mods grouped under bulletpoints
@@ -32,6 +32,7 @@ Legend v1.0.36
     - `modname` is optional but has integration
 - v`X`
     - `X` is last known working versions
+    - may still work even if version is not latest, depends on foundry core version breaking changes, content only mods should not be affected
 - <span style="background:navy">![_____](tags/navy.png)</span>           Best
 - <span style="background:indigo">![_____](tags/indigo.png)</span>       testing
 - <span style="background:ivory">![_____](tags/ivory.png)</span>         ok / optional
@@ -40,7 +41,7 @@ Legend v1.0.36
 - <span style="background:salmon">![_____](tags/salmon.png)</span>       unlikely
 - <span style="background:grey">![_____](tags/grey.png)</span>           unlikely dependency
 - <span style="background:teal">![_____](tags/teal.png)</span>           req new version / install manually
-- <span style="background:violet">![_____](tags/violet.png)</span>       paid
+- <span style="background:violet">![_____](tags/violet.png)</span>       paid / patreon
 - <span style="background:olive">![_____](tags/olive.png)</span>         deprecated / old version with no alternative
 - <span style="background:brown">![_____](tags/brown.png)</span>         should be uninstalled and replaced / issues
 
@@ -49,11 +50,11 @@ Legend v1.0.36
 - these are mods that the DM will be able to use and configure before or during play
 - [jump to nav](#navigation)
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/advanced-drawing-tools
-    -v10-11
+    -v10-12
     - Various additional line, fill, and text style options
     - lets you convert a shape into a polygon, and `add more` edges by `dragging one of the sides`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/better-rolltables
-    -v10
+    -v11
     - RollTables with Drag and Drop, Generate Loot, Encounters and and build your NPC Generator
     - Roll on multiple tables with roll formulas
     - Auto create a loot actor to store generated loot
@@ -64,7 +65,7 @@ Legend v1.0.36
     -v10-11
     - adds a nested folder structure to organize your compendium
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/crunch-my-party
-    -v10-11
+    -v10-12
     - condense party to one icon quickly
     - uses `macros` for crunching and expanding
     - 1 create a `token` that will represent your party
@@ -74,11 +75,11 @@ Legend v1.0.36
     - 5 assign the group the same name as the `party` token
     - 6 use the `toggle party` token to group or ungroup your party
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/dfreds-droppables
-    -v10-11
+    -v10-12
     - allows you to drag and drop an entire folder of tokens or journal entries onto the canvas
     - interaction with `z-scatter` works
 - <span style="background:ivory">![_____](tags/ivory.png)</span> https://foundryvtt.com/packages/doormacro
-    -v10-11
+    -v10-12
     - can apply a macro to a door. You can trigger this macro when the door is:
     - opened
     - closed
@@ -89,27 +90,27 @@ Legend v1.0.36
     - `there is a little button on the top right of the door properties window`
     - `paste the full macro into the box, not the name of the macro`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/dragupload
-    -v10
+    -v10-11
     - drag files to create quick tokens
     - `set` the path beforehand so all your world files are grouped together
     - `set` pathfiles uploaded to `userdata`
     - name the `path` something like `dragupload/uploaded/myname/myworld`
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/clipboard-image
-        -v10-11
+        -v10-12
         - copy-pasting images directly into Foundry VTT Tiles Layer
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/hey-wait
     -v10-11
     - trigger pause on tile stepped on, with little notification and zoom
     - `MUCH easier to setup than monks-active-tiles`
     - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/monks-active-tiles
-        -v10-11
+        -v10-12
         - trigger pause on tile stepped on
         - `set` pause
         - `set` pan canvas to players token
         - it's good for setting up macros on tile trigger and takes a bit of setup to create a template, but you can easily place it and resize once it's created
         - used with `baileywiki`
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/danger-zone
-        -v10-11
+        -v10-12
         - Adds trigger buttons to the Foundry interface for manual zone triggering or the toggling on and off of zones with automated triggers
         - Does not include any video, image or audio components
         - When another module can do something well, such as summoning a token (Warpgate), shaking the screen canvas (Kandashi's Fluid Canvas), or teleporting tokens (Monk's Active Tiles) then Danger Zone will integrate with that module to provide those effects. When a module is installed that Danger Zone integrates with, the new features will automatically be made available to you within Danger Zone
@@ -117,7 +118,7 @@ Legend v1.0.36
         -v10 last version
         - deprecated so use `monks-active-tiles`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/initiative-double-click
-    -v10-11
+    -v10-12
     - double clicking the initiative value in the combat tracker to quickly modify it
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/item-effects-to-chat-5e
     -v10
@@ -140,7 +141,7 @@ Legend v1.0.36
         -v10
         - displays if target saves in blind roll, midi has this?
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/lessfog
-    -v10-11
+    -v10-12
     - Enhance visibility for the GM and players, with transparent FOW and visible tokens for the GM only
     - adds a button on the `left token menu` that allows the gm to have full vision regardless of which token is selected
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/fogmanager
@@ -149,14 +150,14 @@ Legend v1.0.36
         - be sure to click the `merge from others` download button to get the players' current fog
         - be sure to click the `broadcast` upload button to push the fog to all other players
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/gm-vision
-        -v10-11
+        -v10-12
         - possibly similar to `lessfog`
     - <span style="background:brown">![_____](tags/brown.png)</span>https://foundryvtt.com/packages/simplefog
-        -v10
+        -v10-12
         - seems like it's similar to fogmanager but I can't get it to work correctly
         - just use `fogmanager`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/monks-tokenbar
-    -v10-11
+    -v10-12
     - ask for rolls
     - passive info for `PLAYER` tokens
     - lootable bodies if lootsheetnpc enabled `doesn't seem to work`
@@ -178,46 +179,49 @@ Legend v1.0.36
     WALK SPEED      attributes.movement.walk
     ```
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/always-hp
-        -v10-11
+        -v10-12
         - moveable window that can adjust the HP of `ALL` currently selected tokens
         - O `set` load option `gm only`
         - `Shift click` the skull to toggle the dead status without reducing hp
         - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/token-health
-            -v10
+            -v10-12
             - Apply damage/healing with a few keystrokes to all selected or targeted tokens at once.
             - seems similar to `always-hp` but with token icons        
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/token-info-icons
-        -v10-11
+        -v10-12
         - displays Speed, AC, and Passive Perception on Tokens for the `GM`(default) on `right click`
         - if `player` given options, will only work for their `OWNED` tokens
         - `set` uncheck `GM only`
         - O `set` checked `show all passive` shows ac, walk speed, passive perception,investigation,insight,stealth 
     - <span style="background:gold">![_____](tags/gold.png)</span> https://foundryvtt.com/packages/illandril-token-tooltips
-        -v10
+        -v10-12
         - tooltips for DnD5e include HP, AC, Movement Speeds, Passive Perception, Passive Investigation, Passive Insight, Resources, Spell Slots, Feat Usages, and Item Uses and Quantity. All values can be hidden if you do not want them to show.
         - Tooltips are shown for all tokens for GMs, and visibility is configurable for players.
         - similar functionality to `token-info-icons` but with possibly more options
+        - <span style="background:gold">![_____](tags/gold.png)</span> https://foundryvtt.com/packages/token-tooltip-alt
+        -v10-12
+        - adds a fully customizable tooltip next to the currently hovered token to show some useful information for players and DM
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/lmrtfy
         -v10
         - lets Game Masters request rolls from their players
         - `monks token bar` is easier to use
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/dfreds-pocket-change
-        -v10
+        -v10-11
         - D Loot Sheet NPC 5e
         - generates currency for the token based on its challenge rating
         - `monks-tokenbar` has this option
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/monsterblock
-    -v10
+    -v10-11
     - npc character sheet in statblock style
     - D _mathjs
     - some setting on top left of sheet
     - `set` hide image to disable that annoying mouseover
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/dndbeyond-npc-sheet
-        -v10
+        -v10-11
         - additional NPC sheet with simplistic styling similar to that of DNDBeyond.com or official source books
         - `doesn't show remaining legendary resistances`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/monks-wall-enhancement
-    -v10-11
+    -v10-12
     - easier wall creation
     - `wall edges can combine`
     - hold `ctrl` to draw more walls
@@ -225,7 +229,7 @@ Legend v1.0.36
     - `double click` to create a new wall point
     - `ctrl + right click` on a secret door turns it into a regular door 
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/dungeon-draw
-        -v10-11
+        -v10-12
         - A dungeon-drawing module
         - can build and theme rooms quickly
         - `use this to build rooms and doors and monks to fine tune`
@@ -241,20 +245,20 @@ Legend v1.0.36
         - there is a warning when using `monks-wall-enhancement` so maybe not a great idea to use together but the wall ends combining make monks superior if need to choose between
         - `best use case is to activate the mod and build out the walls in all the maps then disable it so that the buttons aren't floating on top of other buttons`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/monks-little-details
-    -v10-11
+    -v10-12
     - hold `M` then `left click` to move selected characters, keeps relative distance
     - adds full text and highlighting for conditions
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/go-to-or-pull-player
-        -v10
+        -v10-11
          - Make pulling multiple players to a scene easier.
          - To get the GM to a specific player (go to it's viewed scene and pan the camera to their token)
          - `right click` on scene for option to `pull` players
          - `right click` bottom list player name for `goto` option, bit buggy and doesn't always show up
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/monks-scene-navigation
-    -v10-11
+    -v10-12
     - folder structure for scenes, supports folders well
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/multi-token-edit
-    -v10-11
+    -v10-12
     - modify group multiple mass edit
     - for searching and editing multiple placeables at the same time 
     - `shift+F` to search for similar tokens
@@ -264,7 +268,7 @@ Legend v1.0.36
     - flags as `purple`. 
     - The newly added checkboxes to the right indicate which fields will be saved on Apply.
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/multilevel-tokens
-    -v10
+    -v10-12
     - Teleport tokens to another location when they move into a particular region
     - a simple alternative to `levels`, but doesn't stack the tiles
     - `usage:`
@@ -275,7 +279,7 @@ Legend v1.0.36
         teleports in/out -> set teleport identifier on both shapes same name
     ```
     - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/levels
-        -v10-11
+        -v10-12
         - D `wall-height`
         - https://wiki.theripper93.com/levels
         - `basic tutorial` https://www.youtube.com/watch?v=ELlweNunn4g
@@ -294,14 +298,14 @@ Legend v1.0.36
         - make a layer from 0 to 99 and `click on it` if you can't see some items in your current scene, as sometimes tokens will be placed on different levels even if the levels popup isn't on
         - used with `baileywiki`
         - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/betterroofs
-            -v10-11
+            -v10-12
             - enhances Foundry's overhead tile vision functionality
             - https://wiki.theripper93.com/free/betterroofs
             - If you are using `Levels`, the Top of the tile needs to be set to `Infinity` for the tile to count as a roof, as well as `is a roof` checked
             - adds `occlusionID` which is useful if you want to hide more than one roof when a token is on that floor
             - used with `baileywiki` 
         - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/wall-height
-            -v10-11
+            -v10-12
                 - allows setting vertical heights to walls
                 - allows tokens to look over or under walls and to move over or under them according to relative height
                 - https://wiki.theripper93.com/free/wall-height
@@ -317,19 +321,19 @@ Legend v1.0.36
                         - wall `10`, token height `5`, scale `2.16` can see tokens on other side next to the wall
                 - used with `baileywiki`
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/stairways
-        v10-11
+        v10-12
         - create buttons that look similar to doors but will teleport on a click instead of open/close
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/multiface-tiles
-    -v10-11
+    -v10-12
     - quickly alter the look of your tiles
     -setting `tile->trigger->action->switch tile image->change to->next` will go to next image in `tile->trigger->images`
     - used with `baileywiki`
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/token-variants
-        -v10-11
+        -v10-12
         - allows quick changing of token images and randomization
         - can display different images for the same token for each user
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/party-overview
-    -v10
+    -v10-12
     - A quick overview about the players that have tokens placed on the currently active scene
     - found on the `actor tab`
     - view health, ac ,passives, money, languages of all players
@@ -340,10 +344,10 @@ Legend v1.0.36
     - adds `priority and vision limitation` to light properties
     - has some interesting options in `scene` for limiting global vision
     - <span style="background:teal">![_____](tags/teal.png)</span>https://foundryvtt.com/packages/vision-5e
-        -v11+
+        -v11-12
         - Additional and improved Vision/Detection modes
         - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/stealthy
-            -v10-11
+            -v10-12
             - filters out any objects with the 'Hidden' condition if the viewing Perception value fails to beat the object's Stealth value
             - Rolling `stealth` checks applies the `hidden` condition and allows editing the `stealth` field on `right click` by the DM
             - Rolling `perception` checks applies the `spot` condition and allows editing the `perception` field on `right click` by the DM
@@ -354,13 +358,13 @@ Legend v1.0.36
                 -v9
                 - D ATE (old ATL)
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/SharedVision
-        -v10
+        -v10-12
         - configure actors so they will always share their vision, or only when you press a control button or when it's triggered by the Trigger Happy or Hey, Wait! modules
         - might be replaced by `vision-5e`
         - can change token vision to see vision/token/fog of tokens with `limited` permission
         - 'token' vision is bugged with persistent token on scene change, other modes work fine
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/permission_viewer
-    -v10
+    -v10-12
     - ownership viewer
     - Quickly see which entities (Journal entries, Actors, etc..) are visible to all players or visible to a specific player
     - none - `3 dots`
@@ -368,11 +372,11 @@ Legend v1.0.36
     - observer - `square`
     - owner - `circle`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/polmap
-    -v10
+    -v10-11
     - allows the GM to color hexes/squares according to who owns the territory
     - the `color` is on a layer `above the token layer`
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/quick-encounters
-    -v10-11
+    -v10-12
     - save tokens into a `Quick Encounter Journal Entry`, marked with a single Map Note on the Scene 
     - O `token-mold`
     - drag tokens onto a journal entry and it will prompt, close window and `drag the journal entry` with the token links onto the map otherwise they will spawn in the center of the map when `run QE` is clicked
@@ -383,19 +387,19 @@ Legend v1.0.36
         - click `update` to save any changes to the list
     - used with `baileywiki`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/quickscale
-    -v10-11
+    -v10-12
     - While any token, tile, template, light, or sound is controlled, use the `left and right square brackets` to nudge their size. Add `Shift` to change the behavior.
     - `seems a little slow on actor tokens, doesn't feel like it works all the time`
     - setting the random scale to the size you want (2.8-3) then pressing `[` will set the selected tokens to that size
     - `shift+\` will save the prototype token settings to the token sheet for dragging
     - `scaling templates` will change in `1ft` increments, in large steps `(shift)` will change in `5ft` increments
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/quick-insert
-    -v10-11
+    -v10-12
     - `Ctrl + Space` to open search/autocomplete characters, monsters, items, spells etc. and insert them wherever you need from a popup bar
     - prefix  `@` for more narrow search 
     - `enable` indexes `items` `tradegoods` `spells` `monsters for DM`, disable the rest
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/rolltable-requester
-    -v10
+    -v10-12
     - options to the context (`right-click`) menu of the rolltables 
     - `Make Roll`
         - Performs the roll in public and displays the results to GM only.
@@ -407,7 +411,7 @@ Legend v1.0.36
         - This is like the named roll except that it will also display the rolltable description.
     - `bug` does not work with multiple-document-selection
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/scaleGrid
-    -v10
+    -v10-11
     - grid scaler
     -  quickly match the scene grid to your map's grid
     ```
@@ -443,17 +447,17 @@ Legend v1.0.36
         - grid opacity 1, don't turn opacity 1 before the rulers or you won't be able to click the map
     - if the `map` is `too big` the alignment will `always` be `slightly off`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/show-secrets
-    -v10-11
+    -v10-12
     - shows item secret notes in the chat window
     - `secret text is automatically shown to the GM but if the GM clicks the button it will show the secret to everyone`
     - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/gm-notes
-        -v10-11
+        -v10-12
         - add GM-Only notes to entities (Actors, Items, Lights, Tiles, Drawings and JournalEntries)
         - `set` on `change color when notes are present`
         - not sure where notes are saved to but seems like it's bound to the sheet
         - `adds a button at the top of each panel for notes`
     - <span style="background:brown">![_____](tags/brown.png)</span>https://foundryvtt.com/packages/hidden-entity-links
-        -v10
+        -v10-12
         - hides entities in the sidebar if players have Limited access to them. This means you can provide secret documents to your players without them seeing them in the sidebar, both permission and manual setting are allowed.
         - players can't see journal in bar but can read if clicked on item desc
         - `couldn't get context menu to open`
@@ -462,13 +466,13 @@ Legend v1.0.36
         - Using the tag @secret[Any Text] will produce an inline secret. Clicking the spoiler will reveal it for the GM.  The secret is removed from the players view completely.
         - `only hidden for GM for some reason and there's no shortcut to make secrets`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/foundryvtt-simple-calendar
-    -v10-11
+    -v10-12
     - preset or custom calendars
     - `check if it has add min/hour functionality`
     - `disable` simple-calendar `open on load`
     - `midiqol` uses
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/smalltime
-        -v10-11
+        -v10-12
         - displaying and controlling the current time of day
         - O simple-calendar
         - 10 min and 1 hour increments, or custom
@@ -479,7 +483,7 @@ Legend v1.0.36
     - Little helpers for little 5e tasks.
     - replaced by `simbuls` mods
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/simbuls-creature-aide
-        -v10-11
+        -v10-12
         - Originally part of DnD 5e Helpers
         - `set` refresh legendary actions after its turn
         - `set` roll ability recharge at start of turn
@@ -487,11 +491,11 @@ Legend v1.0.36
         - `uses lair action` and feature of type `lair action` must be set before combat begins 
         - Prompts GM with available legendary actions in-between combatant turns
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/simbuls-athenaeum
-        -v10-11
+        -v10-12
         - DD
         - A library for use by other Simbul module
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/simbuls-wild-surges
-        -v10-11
+        -v10-12
         - automates Wild Surges for DnD 5e Sorcerers
         - `set` on token page ->scroll to bottom of page-> special traits->wild magic surge
             - `standard` is on 1
@@ -503,7 +507,7 @@ Legend v1.0.36
         - `set` the roll table to the full path if in compendium otherwise regular name, get from dragging to hotbar
             - like Compendium.dnd5e.tables.LHEts1oDaDwcehuj
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/simbuls-template-scaling
-        -v10-11
+        -v10-12
         - scales templates to better fit the 5/5/5 diagonal rule
         - lines - diagonal
         - cones - diagonal
@@ -517,7 +521,7 @@ Legend v1.0.36
             - `set` D&D 5e Style Templates `template measure settings`, though it does grab a bit more than it should
             - use `simbuls-template-scaling`
     - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/simbuls-cover-calculator
-        -v10-11
+        -v10-12
         - calculates cover to target from a token
         - `set` enable computation, others off
         - 1 select a token (attacker)
@@ -532,10 +536,10 @@ Legend v1.0.36
     -v10
         - GM users can change the color of door icons through the wall configuration window
     - <span style="background:gold">![_____](tags/gold.png)</span> https://foundryvtt.com/packages/designerdoors
-        -v10-11
+        -v10-12
         - globally change all door control icons to a new unique set, or to assign custom icons to individual doors
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/tile-scroll 
-  -v10-11
+  -v10-12
   - Scroll, rotate, and repeat tiles over time
   - `tile->animation->scroll->enabled`
   - move left 0, up 90, right 180, down 270
@@ -544,40 +548,41 @@ Legend v1.0.36
     -v9
     - create the effect of movement of map elements like drifting clouds 
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/token-mold
-    -v10
+    -v10-11
     - random token names
     - will `roll hp on default` unless `unchecked`
     - change adjectives to larger list
     - `check` config, `check` overwrite display name (owner)
     - `change settings in actor tab`
 ## `combat chat - probably not compatible`
-- these are mods that override the base functionality of rolling abilities or attacks, are usually not compatible and may create duplicate rolls or unexpected behavior
+- these are mods that override the base functionality of rolling abilities or attacks, are usually not compatible with each other and may create duplicate rolls or unexpected behavior
 - [jump to nav](#navigation)
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/midi-qol
-    -v10-11
+    -v10-12
     - kind of a pain to configure but seems to be a little better than ready set roll
-    ```
-    it can do max damage crits
-    colorize borders of attack rolls
-    buttons for rerolling attacks / damage
-    can auto roll attack and damage
-    adds bleeding status effect when health is below 50%
-    seems to hide dice when gm is not rolling public
-    ```
     - D itemacro
     - D DAE
     - D timesup
     - D foundryvtt-simple-calendar
+    - can do `max damage crits`
+    - colorize borders of attack rolls in chat
+    - `buttons` for `rerolling attacks / damage`
+    - can `auto roll attack and damage`
+    - adds `bleeding status effect` when health is below 50%
+    - seems to `hide gm dice` when gm is not rolling public
+    - `hide gm damage formulas`
+    - `auto checking saving throws and AC` hit check may require `newer versions` of `5e system`
+    
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/chat-portrait
-        -v10
+        -v10-12
         - displays the Actor's portrait images on the chat messages
         - does work with `midiqol`, though `midiqol` already has something similar built-in
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/babonus
-        -v10-11
+        -v10-12
         - create custom bonus modifiers
         - `not entirely sure how this works`
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/ready-set-roll-5e
-        -v10-11
+        -v10-12
         - has the plus / minus on the roll
         - `shift` and `ctrl` allows for the roll to immediately output with advantage or disadvantage
         - alternate roll when holding `alt`
@@ -600,12 +605,12 @@ Legend v1.0.36
 - these are mods that players may be able to use or customize
 - [jump to nav](#navigation)
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/sweetnothings
-    -v10-11
+    -v10-12
     - easier whispers
     - `ALT-W` Whisper dialog box
     - `ALT-R` reply to the last whisper
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/action-pack
-    -v10
+    -v10-11
     - a toggleable panel containing all the activatable items, abilities and spells of the currently selected actor
     - hot key for toggling the tray (default: `E`)
     - possibly use `favorite-items` or `token action hud`
@@ -618,13 +623,13 @@ Legend v1.0.36
     - `summoner` requires `create new tokens` permissions
     - `BUG - DO NOT summon player characters` otherwise they may have a permanent dismiss button on their sheet
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/automated-evocations
-        -v10-11
+        -v10-12
         - interface to manage companions with summoning animations and automated summoning for spells
         - click `companions` in character sheet to add companions
         - summoning a companion will add a permanent `dismiss` button at the top of the sheet created by warpgate
         - `not sure if it's missing a dependency it doesn't always spawn the token, cool summon effects though`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/dice-so-nice
-    -v10
+    -v10-12
     - custom looking dice
     - players may need to reload to change dice
     - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/entice-with-dice-so-nice
@@ -638,14 +643,14 @@ Legend v1.0.36
         - D dice-so-nice
         - another addon for dice so nice
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/dice-calculator
-    -v10-11
+    -v10-12
     - dice tray below chat
         - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/_chatcommands
-            -v10
+            -v10-12
             - autocompletion for commands and @ parameters in chat
             - `monks chat timer` uses it
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/drag-ruler
-    -v10-11
+    -v10-12
     - colored distance calculation
     - token pathfinding
     - `unset` show GM ruler to players
@@ -653,13 +658,13 @@ Legend v1.0.36
         -v10-11
         - used for pathfinding
     - D <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/elevation-drag-ruler
-        -v10-11
+        -v10-12
         - DnD5e Drag Ruler Integration
         - DD
         - quickly change between their different types of movement speed (swimming, flying, burrowing, and climbing)
         - `E)` toggle all difficult terrain for any movement speed for that token
     - O <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/hex-size-support
-        -v10
+        -v10-12
         - DD
         - for hex maps
     - O <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/enhanced-terrain-layer
@@ -681,12 +686,12 @@ Legend v1.0.36
     - `ans1`
     - `ans2`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/easy-target
-    -v10-11
+    -v10-12
     - `Target tokens` while on any layer with `Alt + Click`. 
     - `Target all tokens in an AoE` while on any layer by `Alt + Clicking` inside its area. 
     - `clear all targets` by selecting nothing or by keybind
     - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/smarttarget
-        -v10-11
+        -v10-12
         - Target with `Alt+Click`
         - For players, target by just left clicking a non-owned token (Alt+Click to target owned token)
         - Target all tokens in a template by Alt+Clicking the template (shift modifier and standard\sticky behavior apply)
@@ -699,14 +704,14 @@ Legend v1.0.36
     - To start following select your token, hold the mouse pointer over whom you wish to follow and press `F`.
     - To stop following, simply move your token.
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/forien-quest-log
-    -v10-11
+    -v10-12
     - add quests for everyone to see
     - Hooks.call('ForienQuestLog.Open.QuestLog');
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/illandril-hotbar-uses
-    -v10
+    -v10-12
     - shows item uses/spell slots on hotbar
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/monks-hotbar-expansion
-    -v10
+    -v10-11
         - more hotbars
         - `set` # rows `3`
         - `set` on `reverse`
@@ -715,7 +720,7 @@ Legend v1.0.36
         - `set` off `collapse on select`
         - `set` off `hide page arrows`
     - <span style="background:olive">![_____](tags/olive.png)</span>https://foundryvtt.com/packages/drag-all-to-hotbar
-        -v10-11
+        -v10-12
         - `Drag Anything to Hotbar functionalities are now part of core Foundry VTT since version V10? `
     - <span style="background:olive">![_____](tags/olive.png)</span>https://foundryvtt.com/packages/foundry-token-hotbar
         -v8
@@ -724,55 +729,58 @@ Legend v1.0.36
         -v10
         - Adds an extra, fully functional and customizable macro hotbar above the core Foundry macro hotbar
         - just use `monks-hotbar-expansion`
+- <span style="background:gold">![_____](tags/gold.png)</span> https://foundryvtt.com/packages/rideable
+    -v10-12
+    -replaces `mountup`
+    - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/mountup
+        -v10 last version
+        - easy mounting of other tokens
+        - `set` token you want to be the mount `on` in prototype token
+        - D active-effect-manager-lib
+        - D <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/token-attacher
+            -v10-12
+            - DD
+            - attach token to other tokens or objects
+            - creates `open attaching UI` and `quick edit mode` buttons on sidebar
+            - used with `mountup` and `baileywiki`
+        - D <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/token-z
+            -v10-12
+            - DD
+            - Easily manage the Z-Index of tokens
+            - `mountup` uses
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/token-auras
     -v10-11
     - draw circle around character for aura
     - use through `right click` token settings `aura` tab 
     - only players with vision to `aura` token can see the aura
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/ActiveAuras
-        -v10-11
+        -v10-12
         - D DAE
         - O Token Magic FX
         - char sheet->`effects`->`macro.tokenMagic` effect value `glacial-aura`, 
         - add aura to a character through the compendium, drag onto their sheet (item->active auras auras)
         - `check the compendium and replace any features so they have the active effects`
-- <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/mountup
-    -v10
-    - easy mounting of other tokens
-    - `set` token you want to be the mount `on` in prototype token
-    - D active-effect-manager-lib
-    - D <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/token-attacher
-        -v10-11
-        - DD
-        - attach token to other tokens or objects
-        - creates `open attaching UI` and `quick edit mode` buttons on sidebar
-        - used with `mountup` and `baileywiki`
-    - D <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/token-z
-        -v10-11
-        - DD
-        - Easily manage the Z-Index of tokens
-        - `mountup` uses
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/pings
-    -v10
+    -v10-12
     - `shift + Left click` moves screen
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/polyglot
-    -v10-11
+    -v10-12
     - Talk to others using a language you can speak and it scrambles text you can't understand into several fantasy scripts.
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/raise-my-hand
-    -v10-11
+    -v10-12
     - button to raise a hand
     - `hand appears in bottom left near name`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/rest-recovery
-    -v10-11
+    -v10-12
     - modal for more options during short/long rests
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/resourcesplus
-    -v10
+    -v10-12
     - allows you to have up to 20 resource fields on actor sheets
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/link-item-resource-5e
-    -v10-11
+    -v10-12
         - links item resources to the front page in the resource menu
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/tidy5e-sheet
-    -v10-11
+    -v10-12
     - adds Character Sheet, NPC and vehicles sheet and alters the item sheet
     - `check compatibility with monsterblock`
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/favorite-items
@@ -780,11 +788,11 @@ Legend v1.0.36
         - display of favorite items on first page of char sheet, sync'd in tidy5e
         - tidysheet also has it's own favorites button, `use this if you aren't using tidysheet`
     - O <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/custom-character-sheet-sections
-        -v10
+        -v10-12
         - implements adding custom sections for items on character sheets
         - when `editing` an `item` or `spell`, on the `left bottom` of the window will have a blank area for a name, that name will be a new section below `loot` or `9th level` spells
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/lazymoney
-        -v10
+        -v10-11
         - automatic conversion, in tidy5e
         - `prob just gonna use gold anyway`, built into `midiqol`
     - <span style="background:brown">![_____](tags/brown.png)</span>https://foundryvtt.com/packages/inventory-plus
@@ -793,24 +801,29 @@ Legend v1.0.36
         - can add new categories but it's buggy
         - `seems like its core functionality has already been integrated into foundry aside from transfer without copy`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/token-action-hud-dnd5e
-    -v10-11
+    -v10-12
     - the floating action bar
     - D https://foundryvtt.com/packages/token-action-hud-core
-    -v10-11
+    -v10-12
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/window-controls
-    -v10-11
+    -v10-12
     - persistent Window Taskbar and Window Buttons: Minimize, Maximize and Pin floating Windows
     - `unset` remember pinned windows
     - `unset` checked `minimize everything on outside click`
     - `set` organized minimize to `bottom taskbar` or `bottom`, USER
     - `set` checked `core`->`left click to release objects` USER
+    - <span style="background:salmon">![_____](tags/salmon.png)</span> https://foundryvtt.com/packages/window-tabs
+    -v10-11
+    - Automatic Grouping keeps all of your windows of the same type together. For example, all of your actors will be grouped together, all of your items will be grouped together, etc.
+    - Maximize, Minimize and Dock you Windows. Easily maximize your windows to take up the entire screen, minimize and dock them above hotbar.
+    - `kinda feels like every window takes up more space and the window titles seem to be missing or something sometimes`
 ---
 
 ### `loot`
 - mods that deal with trading and item containers
 - [jump to nav](#navigation)
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/item-piles
-    -v10-11
+    -v10-12
     - Dropping items on the canvas to create piles of items   
     - Item piles acting as containers with the ability to switch its token image depending on its open/closed/empty state
     - O advanced-macros
@@ -829,13 +842,13 @@ Legend v1.0.36
         - has option to `add items to the sheet from compendiums`
         - best use case is to set `token sheet` to the `merchant sheet` to generate items but also have the token be set as a `pile` 
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/party-inventory
-        -v10
+        -v10-11
         - party inventory sheet and party inventory management controls to the character sheet
         - accessed on left side `token controls`->`party inventory` btn
         - does support `transfer items` rather than `copy`
         - `can't add currency with +X`
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/simple-loot-list
-    -v10-11
+    -v10-12
         - adds a secondary inventory list on an actor, where a GM can place loot 
         - open from `token` interface and `drag items, folders, or entire tables` 
         - basically to add a bunch of items to a character so you don't have to remember what they drop, then you can `target` a character and give them the items, though it `doesn't remove` them from the list just copies
@@ -846,7 +859,7 @@ Legend v1.0.36
         - the only way to see if an item has a sub inventory is by clicking `edit`
         - `item piles may have a chance of removing sub inv when it merges items but idk might probably be better to just use custom-character-sheet-sections` 
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/lootsheetnpc5e
-        -v10
+        -v10-12
         - no access (cannot open sheet) to observer (view sheet and contents and utilize loot or buy buttons) to owner (view sheet and add/remove items and configure sheet).
         - This means that you don’t have a token on the map that represents Party Loot. Try adding the Party Loot actor to the map, open up the sheet on that token, and then see if coins are able to be split on the sidebar using the button. You may also need to enable proper permissions in order to split to everyone (checkmark next to player character names). 
             - https://www.reddit.com/r/FoundryVTT/comments/rx521m/how_do_i_use_loot_sheet_npc_5e/
@@ -855,7 +868,7 @@ Legend v1.0.36
     -v10
     - same thing as `give-item` but this one has pictures and doesn't have module settings
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/give-item
-        -v10
+        -v10-11
         - give item to another player
         - adds a button for each item in order to give that item to a different player
         - GM will receive a whisper
@@ -866,57 +879,57 @@ Legend v1.0.36
         - Holding `Shift` changes the value by 5 instead of 1. Holding `Ctrl` changes the value by 50 instead of 1.
         - `You should not expect this module to work with modules that overhaul or destroy core roll behavior, particularly WIRE, RSR, and MIDI. These modules are unsupported, and any compatibility is nothing but a happy accident.`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/magicitems
-    -v10
+    -v10-12
     - adds the ability to create magical items with spells or feats that belong to the item itself, such as staffs or magic wands, which will be automatically inherited from the character who owns the item
     - new tab named 'Magic Item' 
     - `magic items` will have a little wand icon next to the name in the `inventory`
     - there is a `compendium` with some 
     - `usage:` mark the item as a `magic item` in the `magic item tab` AND make sure you `check the box` for `identified` in the `details` tab. then there will be a little `magic wand` next to the item name. then you can see all the added features and spells at the bottom of the features page
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/items-with-spells-5e
-        -v10-11
+        -v10-12
         - possible alternative to `magicitems` if it were to stop working
 ---
 ### `background and dependencies`
 - mods that are dependencies, something that doesn't really require a lot of configuring, or not something that gets interacted with
 - [jump to nav](#navigation)
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/advanced-macros
-    -v10-11
+    -v10-12
     - DD
     - macros can be used to call other macros
     - `item-piles` uses
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/aedifs-tactical-grid
-    -v10
+    -v10-12
     - bind `display distances` in `configure controls` to see distance measurements to all Tokens relative to a specific grid space
-- <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/active-effect-manager-lib
-    -v10
+- <span style="background:olive">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/active-effect-manager-lib
+    -v10 last version
     - DD
     - A library for leverage and synchronize the creation/update/delete of Active Effects
     - `dfreds-convenient-effects` uses
     - `mountup` uses
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/autocomplete-inline-properties
-    -v10
+    -v10-11
     - adds an autocompletion and hint UI for sheet fields that can accept inline properties or other entity data references, for instance a damage field referencing an ability modifier (e.g. @abilities.dex.mod), or an ActiveEffect key (e.g. data.bonuses.mwak.attack)
     - `in character sheet items and active effects fields`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/foundry_community_tables
     -v10-11
     - collection of Tables added by the FoundryVTT Community
     - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/foundry_community_macros
-        -v10
+        -v10-11
         - collection of Macros added by the FoundryVTT Community
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/cleaner-sheet-title-bar
-    -v10-11
+    -v10-12
     - remove text from actions in cluttered title bars.
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/minimal-ui
         -v10-11
         - smaller ui buttons
         - `only seems to affect GM`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/combatbooster
-    -v10-11
+    -v10-12
     - `right click` on token shows `recent actions` for that token and tokens of the same type
     - shows `disc` on `current turn` token
     - shows `lighter disk` on `next turn` token
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/monks-combat-details
-        -v10-11
+        -v10-12
         - Turn Notifications
         - hide creatures from players while you are creating the encounter, aren't revealed in the combat tracker until they've had their first turn `test`
             - `they are put on the tracker if the first round has passed`
@@ -926,20 +939,20 @@ Legend v1.0.36
         - `set` off `show start token` if using combat booster
         - `volume` is set individually
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/monks-combat-marker
-        -v10-11
+        -v10-12
         - Display an animated disc behind the token to indicate the current combatant's turn
         - `combatbooster` is better
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/dae
-    -v10-11
+    -v10-12
     - active effects for most character things
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/damage-log
-    -v10-11
+    -v10-12
     - monitors for changes to characters' heath, and displays those changes in a separate chatlog tab. Changes can be easily be undone, or re-applied using the chat card's right-click menu
     - `set` allow players to view the damage log
     - `set` minimum actor permission `limited` or `observer`, recommended `observer`
         - with those options, players can't see health of `none` which includes monsters, but can see allies health
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/combat-tracker-dock
-        - v10-11
+        -v10-12
         - Spiritual successor of Combat Carousel
         - The V10 Version Tooltips don't work on Firefox or in the Foundry Client, use a Chromium browser
         - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/combat-carousel
@@ -971,7 +984,7 @@ Legend v1.0.36
     - quick table rolling
     - day/night transition duration
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/dfreds-effects-panel
-    -v10-11
+    -v10-12
     - D simple-calendar
     - D DFreds Convenient Effects
     - D Times Up
@@ -979,7 +992,7 @@ Legend v1.0.36
     - O itemacro
     - `set` off `show disabled effects` USER
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/visual-active-effects
-        -v10-11
+        -v10-12
         -  all temporary effects (including status conditions) affecting your current token will be displayed in the top right 
         - `Double-clicking` an effect will toggle it between enabled and disabled.
         - `Right-clicking` an effect will let you delete it. A GM can shift-right-click an effect for quick deletion.
@@ -989,12 +1002,12 @@ Legend v1.0.36
     -v10
     - preview images when you hover over them in the file picker menu
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/itemacro
-    -v10
+    -v10-11
     - DD
     - allow macros to be saved inside of an item and for various different ways to execute macros
     - for `midiqol`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/lib-wrapper
-    -v10-11
+    -v10-12
     - DD
     - everything uses it
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/_mathjs/
@@ -1002,12 +1015,22 @@ Legend v1.0.36
     - DD
     - `monsterblocks uses`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/popout-resizer/
-    -v10
+    -v10-11
     - allows you to resize the side toolbar popouts such as the combat tracker, scenes, actors and compendiums
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/popout
-        -v10-11
+        -v10-12
         - adds a PopOut! button to most actor sheets, journal entries, and applications
         - `already seems to be part of foundry`
+- <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/portal-lib
+    -v11-12
+    - replaces `warpgate`
+    - <span style="background:brown">![_____](tags/brown.png)</span> <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/warpgate
+        -v10-11
+        - DD
+        - completely removed and license changed. use `portal` instaed
+        - provides API functions to make programmatically spawning tokens and modifying those tokens easier for both players and GMs
+        - some animation mods use this too
+        - warpgate.spawn('actorname') can manually spawn
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/property-tooltip
     -v10-11
     - tooltips displayed while hovering over weapon properties in item sheets
@@ -1020,7 +1043,7 @@ Legend v1.0.36
         - display flavor text as a tooltip on your roll formula
         - `doesn't seem to work well with midiqol`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/rarity-colors
-        -v10
+        -v10-12
     - Re-colors Actor Inventory Items and the Items Sidebar names with colors based on item rarity and type
     - `set` disable feat and spell colors
     - Uncommon Items - Green
@@ -1031,39 +1054,40 @@ Legend v1.0.36
     - Spells - Light blue
     - Features - Turquoise
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/socketlib
-    -v10-11
+    -v10-12
     - DD
     - everything uses it
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/tagger
-    -v10-11
+    -v10-12
     - DD
     - `right click` token settings add tags
     - All major PlaceableObjects' configuration dialogues (such as actor prototype tokens, tokens, tiles, walls, lights, etc), now has a "Tags" field.
     - Each tag is separated by a comma.
     - used with `director` and `baileywiki`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/times-up
-    -v10-11
+    -v10-12
     - Deletes effects when their time is up or after a certain number of rounds or turns
     - for `midiqol`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/vtta-tokenizer
-    -v10-11
+    -v10-12
     - in-game token editor
     - `players must by trusted player and have upload file permission`
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/token-frames
+        -v10-12+
         - DD
         - D tokenizer
         - addon to tokenizer adding more frames
         - `content pack doesn't need to activate`
         - unless it was previously installed and the files never removed from `modules/token-frames/token_frames`
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/tokenmagic-automatic-wounds
-    -v10
+    -v10-12
     - automatically apply TokenMagic visual effects of wounds to tokens based on the number of wounds on the token
     - D tokenmagic
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/monks-bloodsplats
-        -v10-11
+        -v10-12
         - Display dead creatures as bloodsplats to keep the battlefield clear of tokens
     - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/splatter
-        -v10-11
+        -v10-12
         - The bigger the hit, the more the blood, `blood will be placed on the scene`
         - When updating to V10+ you will probably need to update your datapaths, this basically means removing any data from the path, for example for dnd5e it would be attributes.hp.value as you can see the data. is no longer in the path.
         - use `tokenmagic-automatic-wounds`, add this if your system can handle additional graphical resources and you don't mind a ton of blood
@@ -1073,24 +1097,18 @@ Legend v1.0.36
         - D colorsettings
         - `can't choose which tokens to apply to, auto applies on hover, so player tokens all are affected`
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/arbron-hp-bar
-        -v10
+        -v10-12
         - modifies hp bar to account for temp hp or something
         - `doesn't quite look the best`
-- <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/warpgate
-    -v10-11
-    - DD
-    - provides API functions to make programmatically spawning tokens and modifying those tokens easier for both players and GMs
-    - some animation mods use this too
-    - warpgate.spawn('actorname') can manually spawn
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/z-scatter
-    -v10-11
+    -v10-12
     - force snap tokens in the same square space
     - size snap (`on` separates, `off` stacks)
 ### `effects and lighting`
 - mods that create visual effects
 - [jump to nav](#navigation)
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/tokenmagic
-    -v10-11
+    -v10-12
     - token magic fx
     - DD
     - Add visual effects to templates, drawings, tokens and tiles. The special effects can be animated. Token Magic FX comes with a compendium of macros for each effect
@@ -1098,10 +1116,10 @@ Legend v1.0.36
     - does somewhat conflict with `autoanimations` by having the effect on the `measured template` as well as the one generated by `autoanimations`
     - basically we use this but with all the effects off because we need this for the `automatic-wounds` mod
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/JB2A_DnD5e
-    -v10
+    -v10-12
     - Animated Assets for spells, tiles, tokens, melee and ranged attacks
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/dfreds-convenient-effects
-        -v10-11
+        -v10-12
         - dfred conditions
         - providing dozens of pre-configured effects for `conditions` and spells that can all be applied quickly
         - D DAE
@@ -1111,7 +1129,7 @@ Legend v1.0.36
         - `set` `app controls permission` to `trusted player`
         - usage: with token selected, `click the effect on the left panel` or `drag it onto a spell effect` so you can click it in the chat log to activates it for the selected token
         - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/ATL
-            -v10-11
+            -v10-12
             - active token effects / active token lighting
             - DD
             - O DAE
@@ -1120,11 +1138,11 @@ Legend v1.0.36
             - token data can be controlled through an Active Effect: size, lighting, vision, image etc.
             - use the syntax `ATL.X` as the attribute key for the active effect. Where `X` is the data path you wish to change. For example to change dimSight on a token use `ATL.dimSight` as the attribute key
             - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/torch
-                -v10-11
+                -v10-12
                 - HUD button to toggle light with specific properties based on equipment and spells in inventory
                 - if not using ATL
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/sequencer
-        -v10-11
+        -v10-12
         - module that lets you play visual effects in your scenes, attaching them to tokens or other elements, animating them, quickly and easily removing them
         - https://fantasycomputer.works/FoundryVTT-Sequencer/#/
         - the following settings could be disabled but needs to be reenabled if an animation is `stuck` like `witch bolt`
@@ -1140,7 +1158,7 @@ Legend v1.0.36
         ui.controls.controls.find(l => l.layer === 'sequencerInterfaceLayer').tools.find(t => t.name === 'effectviewer').onClick()
         ```
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/autoanimations
-    -v10-11
+    -v10-12
         - UI interface for compiling Sequences (Sequencer Module) to be automatically played in your game
         - in-built select menus are populated with JB2A animation choices, but any animation can be set with the Custom field
         - D JB2A_DnD5e
@@ -1151,7 +1169,7 @@ Legend v1.0.36
         - delete `fog cloud(templates)` unless using `dnd5e-animations`
         - if animation stuck `Use the Tile Foreground Layer to remove the Animation`
         - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/dnd5e-animations
-            -v10-11
+            -v10-12
             - D B2A_DnD5e
             - D autoanimations
             - uses the Patreon version of JB2A for most of the animations, but if you are using the free version of JB2A, animations should fall back to their free variants
@@ -1161,7 +1179,7 @@ Legend v1.0.36
             - `set` preset `misty step` movement options `token alpha` to 1
             - technically can disable this once it's been run once, as all it does it add settings to autoanimations
     - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/fxmaster
-        -v10-11
+        -v10-12
         - Particle Effects, including weather (rain, clouds, fog, snow, etc.), animals (crows, bats, spiders, etc.), and a few others.
         - Filter Effects, including color overlays, underwater, and lightning.
         - Clickable Special Effects, using video files provided by external sources. Yes, this allows you to throw fireballs!
@@ -1175,7 +1193,7 @@ Legend v1.0.36
         - `invert particle effects mask` - seems like it just hides the particle effects
         - `filter effects` - creates an overlay, prob best used as lightning, red tint, or blue tint with underwater
     - <span style="background:teal">![_____](tags/teal.png)</span>https://foundryvtt.com/packages/chris-premades
-        -v10.291-11+
+        -v10.291-12
         - dnd5e 2.2.1+
         - Automations for spells, items, and features for high-automation DnD 5E games using Midi-Qo
         - D Midi-Qol
@@ -1189,13 +1207,13 @@ Legend v1.0.36
         - D Sequencer
         - D Template Macro
         - D Token Attacher
-        - D Warpgate
+        - D Warpgate for module <= v0.11
 
 ### `content`
 - mods that contain a bunch of premade assets or packs
 - [jump to nav](#navigation)
 - <span style="background:indigo">![_____](tags/indigo.png)</span>https://foundryvtt.com/packages/baileywiki-nuts-and-bolts
-    -v10-11
+    -v10-12
     - DD
     - This contains journal entries and macros, and generally supports all Baileywiki modules. It will be installed automatically whenever you install any Baileywiki module
     - https://docs.google.com/document/d/1wC_ih_aeK_5vFD2IVd0Y6dOAInvuY-0jfUMggnzZ9kE/edit
@@ -1219,18 +1237,18 @@ Legend v1.0.36
     - <span style="background:indigo">![_____](tags/indigo.png)</span><span style="background:violet">![_____](tags/violet.png)</span> https://foundryvtt.com/packages/baileywiki-community-map-browser
         -v10
         - Community Map Browser that allows Baileywiki Patrons to share maps that they have created using the Baileywiki Modules with other users. You can browse the community collection, liking and downloading the maps that you enjoy; or upload your own contribution
-        - `To get this pack, subscribe to the Foundry Basic Tier (or higher).`
+        - `To get this pack, subscribe to the 'Foundry Basic Track' Tier (or higher) on their patreon.`
     - <span style="background:indigo">![_____](tags/indigo.png)</span>https://foundryvtt.com/packages/baileywiki-maps
-        -v10
+        -v10-11
         - maps with walls, lights, special effects and interactions, module support, and modular pieces
         - D `baileywiki-nuts-and-bolts`
     - <span style="background:indigo">![_____](tags/indigo.png)</span><span style="background:violet">![_____](tags/violet.png)</span> https://foundryvtt.com/packages/baileywiki-maps-premium
-        -v10-11
+        -v10-12
         - lots of premium, ready-made maps and also a whole fleet of naval ship prefabs. 
         - premium modules entirely replace the Baileywiki free module. You can safely disable and uninstall that module assuming you don’t have any active maps that are using it
         - `To get this pack, subscribe to the Foundry Basic Tier (or higher)`
     - <span style="background:indigo">![_____](tags/indigo.png)</span><span style="background:violet">![_____](tags/violet.png)</span> https://foundryvtt.com/packages/baileywiki-landing-pages
-        -v10-11
+        -v10-12
         - O https://foundryvtt.com/packages/custom-fonts
             - only used for the Baileywiki Landing Pages module
         - modular, interactive landing page systems for you to create engaging, customized landing pages for your adventures. Complete with hundreds of props and flexible, dynamic themes
@@ -1257,7 +1275,7 @@ Legend v1.0.36
         -v10-11
         - adds a tag to the start of each module settings’ name that indicates if it is a world (GM Only) or a client (Per User) setting
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/force-client-settings
-        -v10
+        -v10-12
         ```
         This module adds a lock icons next to the client settings in the settings configuration app. Clicking these icons changes the behavior of the settings:
 
@@ -1278,7 +1296,7 @@ Legend v1.0.36
 
         ```
     - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/forien-copy-environment
-        -v10-11
+        -v10-12
         - `Allows for copying TXT/JSON list of installed and enabled system/modules and their versions`
         - `seems like the JSON file copies settings as well as modules and player settings`
         - `does not overwrite scenes or actors only adds stuff`
@@ -1292,19 +1310,20 @@ Legend v1.0.36
         - good for checking dependencies and mod compatibility
         - `best used in a separate world for mod testing, disabled for normal play`
     - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/module-profiles
-        -v10-11
+        -v10-12
         - allows saving of different combinations of modules
         - `only activates/deactivates` mods in the list
         - adds green/red color tag to the mods that are/aren't part of the currently set profile list
         - `does not transfer configs of individual mods`
         - for transferring of configs, use `forien-copy-environment`
     - <span style="background:brown">![_____](tags/brown.png)</span>https://foundryvtt.com/packages/monks-player-settings
-        v10-11
+        v10-12
         - view and edit player settings, as well as keeping your own settings in sync between different browsers
         - DM can manually change other players settings
         - `doesn't seem to work fully when changing another user's settings`
         - `this does allow export and import of user settings kind of`
         - best use case is to manually copy the settings in notepad from a user with good settings to the other users but it's very unreliable especially with sync
+        - absolute best case would be if the server saved the settings for modules per login user instead of having to use something like this
 - <span style="background:navy">![_____](tags/navy.png)</span> https://foundryvtt.com/packages/My-Shared-Compendia
     -v10
     - module to share Data between worlds via compendia
@@ -1324,7 +1343,7 @@ Legend v1.0.36
 
     ```
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/scene-packer
-    -v10-11
+    -v10-12
     - DD
     - help content creators package up Scenes and Adventures
     - Scene Journal Pins link to the correct Journal
@@ -1342,37 +1361,51 @@ Legend v1.0.36
 - [jump to nav](#navigation)
 ### `test DM`
 - [jump to nav](#navigation)
+- <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/Border-Control
+    -v11-12
+    - Can prevent borders from showing on player clients for non-owned tokens
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/bossbar
-    -v10-11
+    -v10-12
     - Dark Souls Like boss healthbar on top of the screen
     - D colorsettings
     - select one or more tokens and click the button in the `left token controls` menu
     - `it creates a bar for every token so it can potentially fill the screen, perhaps if it merged them into one`
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/conversation-hud
-    -v10-11
+    -v10-12
     - a window containing portraits of NPCs that are participating in a conversation so u know who is talking
     - `ctrl+click` on embedded links also opens a conversation
     - `close` conversation with button on `left` under `journal notes` category
+    - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/theatre/
+    -v10-12
+    - allows for a visual novel style RP experience for text
+    - Right-Clicking that actor tile will cause the actor's image and name to appear in the bottom-left of the screen. You can apply Emotes to them via the Emote Selector button, just above the chat box.
+
+    - While the actor is selected in the small box, anything that is typed into Chat will be written as the Actor, and will also appear below the Actor insert on the left side.
+
+    - Another button next to chat, the Megaphone, causes a black box to appear in the middle of the screen. Anything that the GM types to chat will appear in this box. This is good for describing a scene.
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/hot-pan
-    -v10-11
+    -v10-12
     - dm control all camera
     - HotPan.toggle();
     - HotPan.switchOn();
     - HotPan.switchOff();
     - `use macros to toggle`
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/LockView/
-        -v10-11
+        -v10-12
         - gives the GM control over the zoom and pan capabilities of players, such as locking the zoom or pan, moving the canvas, or setting the view to a specified setting.
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/introduce-me
-    -v10
+    -v10-12
     - short flavor text above character
     - `use macro for dialog, otherwise right click menu`
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/journal-icon-numbers
-    -v10-11
+    -v10-12
     -  automatically apply numbered icons (map pins) to journal entries that start with a number
     - you have to name your `journals` like, `A1 or 2B`, then drag onto grid
-- <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/monks-enhanced-journal
+- <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/kasper/
     -v10-11
+    - player reputation tracking in relation to NPCs, Factions, Organizations, and more
+- <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/monks-enhanced-journal
+    -v10-12
     - enhanced version of the journal.  It allows for multiple types of journal entries, and adds increased functionality such as searching, private notes, bookmarks, and `tabs`.
     - `set` off quest related things
     - o <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/monks-shops
@@ -1384,7 +1417,7 @@ Legend v1.0.36
         -v9 
         - css options for journals
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/multiple-document-selection
-    -v10-11
+    -v10-12
     - select multiple documents for moving or deleting
     - hold `ctrl` and `left click` to select multiple documents, `right click` on unselected scene or other tab to deselect
     - `bug` does not work with rollable requester, disables rollable tables context menu
@@ -1413,7 +1446,7 @@ Legend v1.0.36
     -v10-11
     - `Hide` your cursor and your ruler by clicking on the `icon in the players list`, or with `Alt + C` USER
 - <span style="background:teal">![_____](tags/teal.png)</span>https://foundryvtt.com/packages/condition-lab-triggler
-    -v11+ only
+    -v11-12
     - create your own status effects and link them to reference entries (Journal, Item, or compendium) with further info on that status effect
     - Triggler - Trigger the addition or removal of Conditions, and/or the execution of Macros based on changes to actor/token properties such as HP
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/liveanimate
@@ -1421,13 +1454,13 @@ Legend v1.0.36
     - hold down keybind and drag token for real time token movement 
     - may be replaced by `hot-pan`
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/patrol
-    -v10-11
+    -v10-12
     - set paths for npcs and pause / alert if found
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/selectiveshow
     -v9
     - selectively choose who to show journal entries to
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/world-explorer
-    -v10-11
+    -v10-12
     - GM tool for `hexcrawl` campaigns that allows displaying a color layer or image over the background layer, while keeping the grid and tile elements visible. Tiles can be removed by the GM to reveal the underlying map on successful scouting or mapping checks. Enable in scene configuration.
     - basically image as fog of war
     - not sure if works on non hex
@@ -1445,24 +1478,27 @@ Legend v1.0.36
     - overview over which tokens have been targeted by each player
     - `kind of already can see the dots above their token`
 - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/pin-cushion
-    -v10
+    -v10-12
     - tooltips, Removes the background box from map notes
     - `not easy to setup`
     - <span style="background:olive">![_____](tags/olive.png)</span>https://foundryvtt.com/packages/poi-sheet
         -v9
         - create points of interest on a world map using an actor sheet and token instead of using a Journal and making a map note
 - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/anonymous
-    -v10-11
+    -v10-12
     - makes creatures not owned by a player anonymous, shift toggle applies to all instances of original actor
     - `not sure how it works`
-- <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/forien-unidentified-items
-    -v10
-    - provide system agnostic solution to handle unidentified items and their identification
-    - `mystify` - make a copy that is unidentified
-    - `replace with mystify` (default if item is already in an inventory) - the original item is removed and the unidentified takes its place
-    - `mystify as` - make it look like a different item, can also show different stats
-    - can not `mystify as` from inventory so you need to create it on the tab first
-    - `can not use the item until its identified`
+- <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/archon
+    -v10-11
+    - create "unidentified" or multi-stage items
+    - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/forien-unidentified-items
+        -v10
+        - provide system agnostic solution to handle unidentified items and their identification
+        - `mystify` - make a copy that is unidentified
+        - `replace with mystify` (default if item is already in an inventory) - the original item is removed and the unidentified takes its place
+        - `mystify as` - make it look like a different item, can also show different stats
+        - can not `mystify as` from inventory so you need to create it on the tab first
+        - `can not use the item until its identified`
 - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/gm-screen
     -v10
     - tabbed modular grid that GMs can populate with journal entries, rollable tables, actors, and items
@@ -1473,23 +1509,23 @@ Legend v1.0.36
     - hiding formulas and breakdowns from players, showing just the total instead. It can also hide private GM rolls from players entirely
     - `there are options in midiqol that hide formulas`
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/actually-private-rolls
-        -v10
+        -v10-12
         - private rolls to be invisible with no new message notification. This also silences private rolls (removes dice roll sounds)
         - check rollable tables
         - `there are options in midiqol that hide formulas`
     - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/CautiousGamemastersPack
-        -v10-11
+        -v10-12
         - `mostly if you want players to use /desc`
         - rolls made by hidden tokens into blind rolls
         - Notify whether the other players are typing chat messages
         - `there are options in midiqol that hide formulas`
 - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/dfreds-chat-pins
-    -v10-11
+    -v10-12
     - pops out chat messages / rolls with button
     - kind of exists already but this is in one box instead of a bunch of individual
     - `only the dm can mark pins`
 - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/monks-chat-timer
-    -v10-11
+    -v10-12
     - D _chatcommands
     - send a followup message when the timer finishes
     - send format `/timer 5 messageNow (messageOnDone)`
@@ -1515,14 +1551,14 @@ Legend v1.0.36
 ### `test player`
 - [jump to nav](#navigation)
 - <span style="background:teal">![_____](tags/teal.png)</span>https://foundryvtt.com/packages/about-face
-    -v11+
+    -v11-12
     - "direction facing" indicators for tokens
     - Hold `SHIFT` and using your `W,A,S,D` or `↑,←,↓,→ `you can change the direction your token is facing without moving
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/autorotate
-        -v10
+        -v10-11
         - alternate based on about face
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/alternative-rotation
-        -v10-11
+        -v10-12
         - You can also hold `R` while having multiple tiles/tokens selected; this will make all selected tiles/tokens `turn to face your cursor`, until you release the hotkey.  
         - By holding `Shift+R` (configurable), `rotation will snap to the grid` directions (same directions you'd snap to when doing the default rotation in Foundry; 45° or 60°). With R only, rotation will snap to 5 degrees, though you can completely disable even this snapping in the settings ("Smooth rotation").
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/items-with-rolltables-5e
@@ -1533,38 +1569,41 @@ Legend v1.0.36
 ### `test background and dependencies`
 - [jump to nav](#navigation)
 - <span style="background:teal">![_____](tags/teal.png)</span>https://foundryvtt.com/packages/concentrationnotifier
-    -v10.291+?-11
+    -v10.291-11
     - active effect is created on the actor when they use an item that has the Concentration component 
     - `midiqol` might have a similar concentration automation
     - `doesn't show up in the list, have to install manually`
     - `Up to and including dnd5e 2.1.5: Use CN v10.2.0. If later, use the most recent version of the module.`
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/colorsettings
-    -v10
+    -v10-12
     - lib -  colorsettings
     - DD
     - Adds color picker as settings option and form option
     - use with `hitpoint-tint` and `bossbar`
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/disable-mouse-wheel-sliders
-    -v10-11
+    -v10-12
     - disables mouse wheel controls for sliders & numerical input fields
     - `enable` the settings in the Module Settings in order for them to take effect USER
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/token-ease
-    -v10
+    -v10-12
     - introduce easing, custom movement speed, and movement duration to tokens
     - `set` speed to 12, foundry is default 6, this is default 3
     - setting too fast might mess up pathing
 - <span style="background:teal">![_____](tags/teal.png)</span>https://foundryvtt.com/packages/dnd5e-custom-skills
-    -v10-11
+    -v10-12
     - may require `dnd5e v2.2+`
     - `dnd5e v2.1` you should probably use the old `v1.1.7`
     - UI to add new skills or abilities to your player's characters or to hide the default skills and abilities
 - <span style="background:grey">![_____](tags/grey.png)</span>https://foundryvtt.com/packages/effectmacro
-    -v10-11
+    -v10-12
     - DD
     - allows users to embed macros directly into effects
     - for `chris-premades`
+- <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/potato-or-not
+    -v10-12
+    - preset graphics settings, possibly just base settings
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/playerStatus
-    -v10
+    -v10-12
     - Allows players to go AFK and shows which players are currently typing something into the chat.
     - `/afk` reason
     - `/back`
@@ -1578,7 +1617,7 @@ Legend v1.0.36
     - when a token starts its turn in combat within a template ("whenTurnStart") or ends its turn in combat within a template ("whenTurnEnd").
     - for `chris-premades`
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/dd-import
-    -v10-11
+    -v10-12
     - Allows Importing Dungeondraft, DungeonFog or Arkenforge export files into FoundryVTT.
 - <span style="background:olive">![_____](tags/olive.png)</span>https://foundryvtt.com/packages/TokensVisible
     -v9
@@ -1586,7 +1625,7 @@ Legend v1.0.36
     - hidden tokens are no longer prevented from emitting light
     - pressing `Alt` while moving a token will cause the token animation to be cancelled for that movement. This is useful for players to move a token, but to temporarily cancel animation as if teleporting
 - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/fvtt-party-resources
-    -v10-11
+    -v10-12
     - manage party-wide, numeric values on bottom of screen
     - hold `CTRL` when clicking to jump by +/- 10
     - hold `SHIFT` when clicking to jump by +/- 100
@@ -1594,7 +1633,7 @@ Legend v1.0.36
     - `set` location bar to bottom
     - `little annoying to set up`
 - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/settings-extender
-    -v10-11
+    -v10-12
     - DD
     - we use it, possibly some module installs it
     - `dark mode` uses it
@@ -1603,11 +1642,11 @@ Legend v1.0.36
     - DD
     - `environment-interaction-multisystem` uses it
 - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/dark-mode-5e
-    -v10-11
+    -v10-12
     - navigate to any Actor Sheet and click on the 'Change Dark/Light Mode' button
     - `don't really need a dark mode and it takes up a bar slot`
 - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/fuzzy-foundry
-    -v10-11
+    -v10-12
     - Dig Down
     - Perform deep searches inside folder structures, on sidebars and fuzzy searches on compendiums/sidebars and more.
     - use `quick-insert`
@@ -1621,29 +1660,29 @@ Legend v1.0.36
     - Table : Loot1
     - `prob not worth it`
 - <span style="background:salmon">![_____](tags/salmon.png)</span>https://foundryvtt.com/packages/item-delete-check
-    -v10-11
+    -v10-12
     - shows a dialog when a user tries to delete an item from their inventory
     - messages DM when item is removed or currency changes
     - `dialog implemented already`
 - <span style="background:brown">![_____](tags/brown.png)</span>https://foundryvtt.com/packages/wild-magic-surge-5e
-    -v10-11
+    -v10-12
     - prompt, auto roll, or table trigger
     - use `simbuls-wild-surges`
 
 ### `test effects and lighting`
 - [jump to nav](#navigation)
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/swarm
-    -v10
+    -v10-12
     - create vfx swarms above a token that follow
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/token-factions
-    -v10
+    -v10-12
     - allow you to assign tokens to factions by using the token's disposition colors, the token actor's folder color, or defining your own custom replacement colors for token dispositions.
     - `might not be useful for player tokens if using full size grid square images for tokens but might be useful for NPC tokens that aren't full size`
 - <span style="background:olive">![_____](tags/olive.png)</span>https://foundryvtt.com/packages/kandashis-fluid-canvas
     -v9
     - sync canvas animations between your players. Send earthquakes as a city wall topples, a heartbeat pulse as a player draws close to death or a drunken haze as they stumble from the nearby tavern.
 - <span style="background:brown">![_____](tags/brown.png)</span>https://foundryvtt.com/packages/gm-token-drag-visibility-v2
-    -v10
+    -v10-12
     - disables the vision limitation when dragging a token as a GM. Useful for moving players between floors on the same map
     - `doesn't seem to do anything`
 ### `test content`
@@ -1656,14 +1695,14 @@ Legend v1.0.36
     - Jack Kerouac's Animated Spell Effects: Cartoon
     - More than 500 FREE animated cartoon effects for spells for use with various VTT's in the top-down/overhead perspective. Also, dozens of individual elements for modules like Sequencer to make your own effects
 - <span style="background:ivory">![_____](tags/ivory.png)</span>https://foundryvtt.com/packages/jaamod
-    -v10-11
+    -v10-12
     - Animated Art for use with VTT's in the top-down/overhead perspective
     - Files will be located in your `"Data\modules\jaamod\AnimatedArt"` folder
     - don't need to activate as they are just assets
     - `somewhat large package`
     - useful for `dfreds-convenient-effects` and `fxmaster`
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/mmm
-    -v10-11
+    -v10-12
     - Maxwell's Manual of Malicious Maladies
     - compendiums of the injuries, effects, items, and tables for rolling. Rolling for injuries can be automated through settings, chat commands, and/or `midiqol`
     - https://wiki.theripper93.com/free/mmm
@@ -1672,7 +1711,7 @@ Legend v1.0.36
     -v10
     - letter / number placeholder tokens
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/beavers-potions
-    -v10
+    -v10-12
     - 50 additional magical potions
     - D itemacro
     - D midi-qol
@@ -1681,7 +1720,7 @@ Legend v1.0.36
     - D dfreds-convenient-effects
     - D ActiveAuras
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/game-icons-net
-    -v10-11
+    -v10-12
     - `No need to activate this module`
 ```
     Just browse to the icon you want for all your icon needs.
@@ -1690,28 +1729,28 @@ Legend v1.0.36
     modules/game-icons-net/whitebackgrounds/ 
 ```
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/moulinette-core
-    -v10-11
+    -v10-12
     - `the core only provides the Moulinette's foundations. You'll have to install additional modules to bring features`
     - content access list at bottom of page https://www.moulinette.cloud/getting-started/use-moulinette-to-access-creators-assets/
     - essentially you get access to your local stuff and moulinette showcase packs but not free or paid stuff from a creator unless you patreon the creator or moulinette
     - <span style="background:gold">![_____](tags/gold.png)</span><span style="background:violet">![_____](tags/violet.png)</span>https://foundryvtt.com/packages/moulinette-scenes
-        -v10-11
+        -v10-12
         - D `moulinette-core`
         - adds capabilities for indexing scenes from other modules. If you support moulinette (Patreon), you also get access to scenes from Moulinette Cloud. See https://www.moulinette.cloud
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/moulinette-gameicons
-        -v10-11
+        -v10-12
         - D `moulinette-core`
         - adds capabilities for searching and downloading icons from game-icons.net. Search and download desired icons. Specify the background and foreground colors you'd like to use.
     - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/moulinette-imagesearch
-        -v10-11
+        -v10-12
         - D `moulinette-core`
         - adds capabilities for searching images and generating articles, tiles or tokens on the fly.
     - <span style="background:gold">![_____](tags/gold.png)</span><span style="background:violet">![_____](tags/violet.png)</span>https://foundryvtt.com/packages/moulinette-tiles
-        -v10-11
+        -v10-12
         - D `moulinette-core`
         - adds capabilities for downloading tiles and adding them to your scenes. You can also bring your own images and manage them. Drag & drop images to your scenes to add tiles, actors' tokens or journal notes. `support moulinette (Patreon) to get access to Moulinette Cloud assets` https://www.moulinette.cloud
     - <span style="background:gold">![_____](tags/gold.png)</span><span style="background:violet">![_____](tags/violet.png)</span>https://foundryvtt.com/packages/moulinette-sounds
-        -v10-11
+        -v10-12
         - D `moulinette-core`
         - adds capabilities for managing your sounds and create a soundpad. Bring your own sounds, manage them and assign them to a soundpad as you like. Includes Tabletop Audio `SoundPad (requires Patreon support)`
 
@@ -1725,8 +1764,11 @@ Legend v1.0.36
     - kind of useful when teaching someone how to use foundry
 
 ### `random older version`
-- some mods that are below v10 that looked interesting but not able to test
+- some mods that are below v10 that looked interesting but may not be able to test
 - [jump to nav](#navigation)
+- <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/npcgen
+    -v8
+    - adds a customizable NPC Generator to Foundry
 - <span style="background:olive">![_____](tags/olive.png)</span>https://foundryvtt.com/packages/showwalls
     -v8
     - lets you see walls while viewing other layers
@@ -1743,15 +1785,17 @@ Legend v1.0.36
     -v9
     - add and remove walls based on the active effects applied on the token, for hidden walls
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/token-hud-wildcard
-    -v9
+    -v9-12
     - adds a button to the Token HUD if the token has wildcard set and detects more than 1 image to choose from
+    - `token variant art` may be better
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/chatlog-scaler
     -v9
     - change the font sizes in the Chat Log panel using `ctrl+mouseWheelUp` and `ctrl+mouseWheelDown`
-- <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/EasyTable
+- <span style="background:brown">![_____](tags/brown.png)</span>https://foundryvtt.com/packages/EasyTable
     -v8
     - RollTables from CSV (or any-SV) data
     - use `content-parser`
+    - removed
 - <span style="background:gold">![_____](tags/gold.png)</span>https://foundryvtt.com/packages/betterCurses
     -v9
     - adds curse tab for modifying attack rolls
@@ -1806,5 +1850,6 @@ Legend v1.0.36
 - automatically run convenient effects [`token effects Macro.dae.CE effect value Prone`] 
     - https://gitlab.com/tposney/midi-qol/-/issues/511
 - roll table for flavor text during attack [none]
+- quick-encounter saves predetermined token locations? []
 ## `absolute bottom`
 - [jump to nav](#navigation)
